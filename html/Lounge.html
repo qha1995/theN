@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Lounge</title>
+
+		<!-- CSS -->
+
+		<!-- css: reset -->
+		<link href="../Jg/pub/css/reset.min.css" rel="stylesheet" type="text/css" />
+
+		<!-- css: common -->
+		<link href="../Jg/pub/css/common.css" rel="stylesheet" type="text/css" />
+
+		<!-- css: lounge -->
+		<link href="../Jg/pub/css/Jg.min.css" rel="stylesheet" type="text/css" />
+
+		<!-- css: xeicon -->
+		<link href="../Jg/lib/XEIcon-master/xeicon.min.css" rel="stylesheet" type="text/css" />
+
+		<!-- css: loadingBar -->
+		<link href="../Jg/module/LoadingBar/css/LoadingBar_bominchoi_ver1.2.css" rel="stylesheet" type="text/css" />
+
+		<!-- JS -->
+
+		<!-- jquery -->
+		<script type="text/javascript" src="../Jg/lib/jquery/jquery/js/jquery-3.7.1.min.js"></script>
+
+		<!-- js: lounge -->
+		<script type="text/javascript" src="../Jg/js/lounge.js"></script>
+	</head>
+
+	<body>
+		<!-- wrapper start -->
+		<div class="jg-wrapper-1">
+			<!-- header start  -->
+			<header class="jg-header">
+				<!-- top- area start -->
+				<div class="jg-top-area">
+					<!-- logo start -->
+					<div class="jg-logo">
+						<img class="jg-logo-img" src="../Jg/pub/img/logo.png" alt="logo" />
+						<p class="jg-logo-p">Vedio Management System</p>
+						<p class="jg-logo-p">-</p>
+						<p class="jg-logo-p">Dev</p>
+					</div>
+					<!-- logo end -->
+					<!-- top-area-button start-->
+					<div class="jg-top-area-icon">
+						<ul>
+							<li data-id="" class="jg-download">
+								<a href=""><i class="xi-folder-download-o"></i></a>
+							</li>
+							<li data-id="" class="jg-user">
+								<a href=""><i class="xi-profile"></i></a>
+							</li>
+							<li data-id="" class="jg-aside">
+								<a href=""><i class="xi-ellipsis-v"></i></a>
+							</li>
+						</ul>
+					</div>
+					<!-- top-area-button end-->
+				</div>
+				<!-- top- area end -->
+				<!-- gnb start -->
+				<nav class="jg-gnb-1">
+					<!-- gnb-container start -->
+					<div id="jg-gnb-1-tabs" class="jg-gnb-container">
+						<ul>
+							<li data-tabid="dashboard" class="jg-dashboard">
+								<a href="#"><i class="xi-command"></i></a>
+							</li>
+							<li data-tabid="camera" class="jg-video jg-on">
+								<a href="#"><i class="xi-videocam-o"></i></a>
+							</li>
+							<li data-tabid="device" class="jg-device-events">
+								<a href="#"><i class="xi-info-o"></i></a>
+							</li>
+							<li data-tabid="zoom" class="jg-zoom">
+								<a href="#"><i class="xi-focus-weak"></i></a>
+							</li>
+							<li data-tabid="map" class="jg-map">
+								<a href="#"><i class="xi-map-o"></i></a>
+							</li>
+							<li data-tabid="setting" class="jg-setting">
+								<a href="#"><i class="xi-cog"></i></a>
+							</li>
+							<li data-tabid="user" class="jg-user">
+								<a href="#"><i class="xi-user-o"></i></a>
+							</li>
+						</ul>
+					</div>
+					<!-- gnb-container end -->
+				</nav>
+				<!-- gnb end -->
+			</header>
+			<!-- header end -->
+			<!-- main start -->
+			<main id="jg-main" class="jg-main">
+				<div data-tabid="dashboard">dashboard 입니다.</div>
+				<div data-tabid="device">device 입니다.</div>
+				<div data-tabid="zoom">zoom 입니다.</div>
+				<div data-tabid="map">map 입니다.</div>
+				<div data-tabid="setting">setting 입니다.</div>
+				<div data-tabid="user">user 입니다.</div>
+				<div data-tabid="camera">
+					<!-- gnb-board start -->
+					<section class="jg-camera-list">
+						<!-- tree module start -->
+						<!-- checkbox, icon default 
+                            jg-tree-dark-button-box에 -nocheck, -noicon 클래스명 추가로 삭제 가능 -->
+						<div id="your-project">
+							<!-- jg-tree-dark-wrapper-1 start -->
+							<div class="jg-tree-dark-wrapper-1">
+								<!-- jg-tree-dark-button-submenu start -->
+								<div class="jg-tree-dark-wrapper-1-submenu">
+									<ul class="jg-tree-dark-wrapper-1-submenu-list">
+										<li class="jg-tree-dark-wrapper-1-submenu-list-child-1">카메라 교체 카메라 교체</li>
+										<li class="jg-tree-dark-wrapper-1-submenu-list-child-2">카메라 이슈 확인</li>
+										<li class="jg-tree-dark-wrapper-1-submenu-list-child-3">카메라 규칙</li>
+										<li class="jg-tree-dark-wrapper-1-submenu-list-child-4">카메라 설정</li>
+									</ul>
+									<div class="jg-tree-dark-wrapper-1-submenu-close"><i class="xi-close-square"></i></div>
+								</div>
+								<!-- jg-tree-dark-button-submenu end -->
+								<!-- jg-tree-dark-wrapper-2 start -->
+								<div class="jg-tree-dark-wrapper-2">
+									<!-- jg-tree-dark-title start-->
+									<!-- jg-tree-dark-depth-1-wrapper start -->
+
+									<div class="jg-tree-dark-title">
+										<p class="jg-tree-dark-title-p">Tree Module</p>
+										<div class="jg-tree-dark-title-button">
+											<div class="jg-tree-dark-title-button-revise">
+												<i class="xi-pen"></i>
+											</div>
+											<div class="jg-tree-dark-title-button-add">
+												<i class="xi-plus-square"></i>
+											</div>
+											<div class="jg-tree-dark-title-button-delete">
+												<i class="xi-minus-square"></i>
+											</div>
+										</div>
+									</div>
+
+									<!-- jg-tree-dark-title end-->
+									<ul class="jg-tree-dark-depth-1-wrapper">
+										<!-- jg-tree-dark-depth-1 start -->
+
+										<li class="jg-tree-dark-depth-1">
+											<!--jg-tree-dark-button-wrap start  -->
+											<div class="jg-tree-dark-button-wrap">
+												<div class="jg-tree-dark-button">
+													<div class="jg-tree-dark-button-box">
+														<div class="jg-tree-dark-button-box-pwrap">
+															<i class="jg-tree-dark-button-box-arrow-open xi-angle-down-min"></i>
+															<i class="jg-tree-dark-button-box-arrow-close xi-angle-right-min"></i>
+															<span class="jg-tree-dark-button-box-span">
+																<input
+																	tabindex="-1"
+																	data-role="checkbox"
+																	type="checkbox"
+																	aria-label="Deselect row"
+																	aria-checked="true"
+																	class="jg-tree-dark-button-box-span-input"
+																/>
+															</span>
+															<i class="jg-tree-dark-button-box-icon xi-sitemap"></i>
+
+															<p class="jg-tree-dark-button-box-p">First Menu 01</p>
+														</div>
+													</div>
+												</div>
+
+												<!--jg-tree-dark-button-tab start  -->
+												<div class="jg-tree-dark-button-tab">
+													<i class="jg-tree-dark-button-tab-i xi-home"></i>
+													<i class="jg-tree-dark-button-tab-i xi-bookmark"></i>
+													<i class="jg-tree-dark-button-tab-i xi-save"></i>
+													<i class="jg-tree-dark-button-tab-i xi-bars"></i>
+												</div>
+												<!-- jg-tree-dark-button-tab end -->
+											</div>
+											<!--jg-tree-dark-button-wrap end  -->
+
+											<!-- jg-tree-dark-depth-2 start -->
+											<ul class="jg-tree-dark-depth-2-wrapper">
+												<li class="jg-tree-dark-depth-2-child">
+													<!--jg-tree-dark-button-wrap start  -->
+													<div class="jg-tree-dark-button-wrap">
+														<div class="jg-tree-dark-button jg-active">
+															<div class="jg-tree-dark-button-box">
+																<div class="jg-tree-dark-button-box-pwrap">
+																	<i class="jg-tree-dark-button-box-arrow-open xi-angle-down-min"></i>
+																	<i class="jg-tree-dark-button-box-arrow-close xi-angle-right-min"></i>
+																	<span class="jg-tree-dark-button-box-span">
+																		<input
+																			tabindex="-1"
+																			data-role="checkbox"
+																			type="checkbox"
+																			aria-label="Deselect row"
+																			aria-checked="true"
+																			class="jg-tree-dark-button-box-span-input"
+																		/>
+																	</span>
+																	<i class="jg-tree-dark-button-box-icon xi-branch"></i>
+																	<p class="jg-tree-dark-button-box-p">Second Menu 01 Second Menu 01 Second Menu 01</p>
+																</div>
+															</div>
+														</div>
+														<!--jg-tree-dark-button-tab start  -->
+														<div class="jg-tree-dark-button-tab">
+															<i class="jg-tree-dark-button-tab-i xi-home"></i>
+															<i class="jg-tree-dark-button-tab-i xi-bookmark"></i>
+															<i class="jg-tree-dark-button-tab-i xi-save"></i>
+															<i class="jg-tree-dark-button-tab-i xi-bars"></i>
+														</div>
+
+														<!-- jg-tree-dark-button-tab end -->
+													</div>
+													<!--jg-tree-dark-button-wrap end  -->
+													<ul class="jg-tree-dark-depth-3-wrapper">
+														<li class="jg-tree-dark-depth3-child">
+															<!--jg-tree-dark-button-wrap start  -->
+															<div class="jg-tree-dark-button-wrap">
+																<div class="jg-tree-dark-button">
+																	<div class="jg-tree-dark-button-box">
+																		<div class="jg-tree-dark-button-box-pwrap">
+																			<i class="jg-tree-dark-button-box-arrow-open xi-angle-down-min"></i>
+																			<i class="jg-tree-dark-button-box-arrow-close xi-angle-right-min"></i>
+																			<span class="jg-tree-dark-button-box-span">
+																				<input
+																					tabindex="-1"
+																					data-role="checkbox"
+																					type="checkbox"
+																					aria-label="Deselect row"
+																					aria-checked="true"
+																					class="jg-tree-dark-button-box-span-input"
+																				/>
+																			</span>
+																			<i class="jg-tree-dark-button-box-icon xi-webcam"></i>
+
+																			<p class="jg-tree-dark-button-box-p">This is Third Menu 01 and 2 Line and 3 Line</p>
+																		</div>
+																	</div>
+																</div>
+																<!--jg-tree-dark-button-tab start  -->
+																<div class="jg-tree-dark-button-tab">
+																	<i class="jg-tree-dark-button-tab-i xi-home"></i>
+																	<i class="jg-tree-dark-button-tab-i xi-bookmark"></i>
+																	<i class="jg-tree-dark-button-tab-i xi-save"></i>
+																	<i class="jg-tree-dark-button-tab-i xi-bars"></i>
+																</div>
+																<!-- jg-tree-dark-button-tab end -->
+
+																<!--  jg-tree-dark-button-more start-->
+																<div class="jg-tree-dark-button-more">
+																	<p class="jg-tree-dark-button-more-p">Second Menu 01 Second Menu 01 Second Menu 01</p>
+																</div>
+																<!--  jg-tree-dark-button-more end-->
+															</div>
+
+															<!--jg-tree-dark-button-wrap end  -->
+														</li>
+														<li class="jg-tree-dark-depth-3-child">
+															<!--jg-tree-dark-button-wrap start  -->
+															<div class="jg-tree-dark-button-wrap">
+																<div class="jg-tree-dark-button">
+																	<div class="jg-tree-dark-button-box">
+																		<div class="jg-tree-dark-button-box-pwrap">
+																			<i class="jg-tree-dark-button-box-arrow-open xi-angle-down-min"></i>
+																			<i class="jg-tree-dark-button-box-arrow-close xi-angle-right-min"></i>
+																			<span class="jg-tree-dark-button-box-span">
+																				<input tabindex="-1" data-role="checkbox" type="checkbox" aria-label="Deselect row" aria-checked="true" />
+																			</span>
+																			<i class="jg-tree-dark-button-box-icon xi-webcam"></i>
+
+																			<p class="jg-tree-dark-button-box-p">Third Menu 02</p>
+																		</div>
+																	</div>
+																</div>
+																<!--jg-tree-dark-button-tab start  -->
+																<div class="jg-tree-dark-button-tab">
+																	<i class="jg-tree-dark-button-tab-i xi-home"></i>
+																	<i class="jg-tree-dark-button-tab-i xi-bookmark"></i>
+																	<i class="jg-tree-dark-button-tab-i xi-save"></i>
+																	<i class="jg-tree-dark-button-tab-i xi-bars"></i>
+																</div>
+																<!-- jg-tree-dark-button-tab end -->
+															</div>
+															<!--jg-tree-dark-button-wrap end  -->
+														</li>
+														<li class="jg-tree-dark-depth3-child">
+															<!--jg-tree-dark-button-wrap start  -->
+															<div class="jg-tree-dark-button-wrap">
+																<div class="jg-tree-dark-button jg-active-list">
+																	<div class="jg-tree-dark-button-box">
+																		<div class="jg-tree-dark-button-box-pwrap">
+																			<i class="jg-tree-dark-button-box-arrow-open xi-angle-down-min"></i>
+																			<i class="jg-tree-dark-button-box-arrow-close xi-angle-right-min"></i>
+																			<span class="jg-tree-dark-button-box-span">
+																				<input tabindex="-1" data-role="checkbox" type="checkbox" aria-label="Deselect row" aria-checked="true" />
+																			</span>
+																			<i class="jg-tree-dark-button-box-icon xi-webcam"></i>
+
+																			<p class="jg-tree-dark-button-box-p">Third Menu 03</p>
+																		</div>
+																	</div>
+																</div>
+																<!--jg-tree-dark-button-tab start  -->
+																<div class="jg-tree-dark-button-tab">
+																	<i class="jg-tree-dark-button-tab-i xi-home"></i>
+																	<i class="jg-tree-dark-button-tab-i xi-bookmark"></i>
+																	<i class="jg-tree-dark-button-tab-i xi-save"></i>
+																	<i class="jg-tree-dark-button-tab-i xi-bars"></i>
+																</div>
+																<!-- jg-tree-dark-button-tab end -->
+															</div>
+															<!--jg-tree-dark-button-wrap end  -->
+														</li>
+													</ul>
+												</li>
+											</ul>
+											<!-- jg-tree-dark-depth-2 end -->
+											<ul class="jg-tree-dark-depth-2-wrapper">
+												<li class="jg-tree-dark-depth-2-child">
+													<!--jg-tree-dark-button-wrap start  -->
+													<div class="jg-tree-dark-button-wrap">
+														<div class="jg-tree-dark-button">
+															<div class="jg-tree-dark-button-box">
+																<div class="jg-tree-dark-button-box-pwrap">
+																	<i class="jg-tree-dark-button-box-arrow-open xi-angle-down-min"></i>
+																	<i class="jg-tree-dark-button-box-arrow-close xi-angle-right-min"></i>
+																	<span class="jg-tree-dark-button-box-span">
+																		<input tabindex="-1" data-role="checkbox" type="checkbox" aria-label="Deselect row" aria-checked="true" />
+																	</span>
+																	<i class="jg-tree-dark-button-box-icon xi-branch"></i>
+
+																	<p class="jg-tree-dark-button-box-p">Second Menu 02</p>
+																</div>
+															</div>
+														</div>
+														<!--jg-tree-dark-button-tab start  -->
+														<div class="jg-tree-dark-button-tab">
+															<i class="jg-tree-dark-button-tab-i xi-home"></i>
+															<i class="jg-tree-dark-button-tab-i xi-bookmark"></i>
+															<i class="jg-tree-dark-button-tab-i xi-save"></i>
+															<i class="jg-tree-dark-button-tab-i xi-bars"></i>
+														</div>
+														<!-- jg-tree-dark-button-tab end -->
+													</div>
+													<!--jg-tree-dark-button-wrap end  -->
+													<ul class="jg-tree-dark-depth-3-wrapper">
+														<li class="jg-tree-dark-depth3-child">
+															<!--jg-tree-dark-button-wrap start  -->
+															<div class="jg-tree-dark-button-wrap">
+																<div class="jg-tree-dark-button">
+																	<div class="jg-tree-dark-button-box">
+																		<div class="jg-tree-dark-button-box-pwrap">
+																			<i class="jg-tree-dark-button-box-arrow-open xi-angle-down-min"></i>
+																			<i class="jg-tree-dark-button-box-arrow-close xi-angle-right-min"></i>
+																			<span class="jg-tree-dark-button-box-span">
+																				<input tabindex="-1" data-role="checkbox" type="checkbox" aria-label="eselect row" aria-checked="true" />
+																			</span>
+																			<i class="jg-tree-dark-button-box-icon xi-webcam"></i>
+
+																			<p class="jg-tree-dark-button-box-p">Third Menu 01</p>
+																		</div>
+																	</div>
+																</div>
+																<!--jg-tree-dark-button-tab start  -->
+																<div class="jg-tree-dark-button-tab">
+																	<i class="jg-tree-dark-button-tab-i xi-home"></i>
+																	<i class="jg-tree-dark-button-tab-i xi-bookmark"></i>
+																	<i class="jg-tree-dark-button-tab-i xi-save"></i>
+																	<i class="jg-tree-dark-button-tab-i xi-bars"></i>
+																</div>
+																<!-- jg-tree-dark-button-tab end -->
+															</div>
+															<!--jg-tree-dark-button-wrap end  -->
+														</li>
+														<li class="jg-tree-dark-depth3-child">
+															<!--jg-tree-dark-button-wrap start  -->
+															<div class="jg-tree-dark-button-wrap">
+																<div class="jg-tree-dark-button jg-hold">
+																	<div class="jg-tree-dark-button-box">
+																		<div class="jg-tree-dark-button-box-pwrap">
+																			<i class="jg-tree-dark-button-box-arrow-open xi-angle-down-min"></i>
+																			<i class="jg-tree-dark-button-box-arrow-close xi-angle-right-min"></i>
+																			<span class="jg-tree-dark-button-box-span">
+																				<input tabindex="-1" data-role="checkbox" type="checkbox" aria-label="Deselect row" aria-checked="true" />
+																			</span>
+																			<i class="jg-tree-dark-button-box-icon xi-webcam"></i>
+
+																			<p class="jg-tree-dark-button-box-p">Third Menu 02</p>
+																		</div>
+																	</div>
+																</div>
+																<!--jg-tree-dark-button-tab start  -->
+																<div class="jg-tree-dark-button-tab">
+																	<i class="jg-tree-dark-button-tab-i xi-home"></i>
+																	<i class="jg-tree-dark-button-tab-i xi-bookmark"></i>
+																	<i class="jg-tree-dark-button-tab-i xi-save"></i>
+																	<i class="jg-tree-dark-button-tab-i xi-bars"></i>
+																</div>
+																<!-- jg-tree-dark-button-tab end -->
+															</div>
+															<!--jg-tree-dark-button-wrap end  -->
+														</li>
+
+														<li class="jg-tree-dark-depth3-child">
+															<!--jg-tree-dark-button-wrap start  -->
+															<div class="jg-tree-dark-button-wrap">
+																<div class="jg-tree-dark-button">
+																	<div class="jg-tree-dark-button-box">
+																		<div class="jg-tree-dark-button-box-pwrap">
+																			<i class="jg-tree-dark-button-box-arrow-open xi-angle-down-min"></i>
+																			<i class="jg-tree-dark-button-box-arrow-close xi-angle-right-min"></i>
+																			<span class="jg-tree-dark-button-box-span">
+																				<input tabindex="-1" data-role="checkbox" type="checkbox" aria-label="Deselect row" aria-checked="true" />
+																			</span>
+																			<i class="jg-tree-dark-button-box-icon xi-webcam"></i>
+
+																			<p class="jg-tree-dark-button-box-p">Third Menu 03</p>
+																		</div>
+																	</div>
+																</div>
+																<!--jg-tree-dark-button-tab start  -->
+																<div class="jg-tree-dark-button-tab">
+																	<i class="jg-tree-dark-button-tab-i xi-home"></i>
+																	<i class="jg-tree-dark-button-tab-i xi-bookmark"></i>
+																	<i class="jg-tree-dark-button-tab-i xi-save"></i>
+																	<i class="jg-tree-dark-button-tab-i xi-bars"></i>
+																</div>
+																<!-- jg-tree-dark-button-tab end -->
+															</div>
+															<!--jg-tree-dark-button-wrap end  -->
+															<ul class="jg-tree-dark-depth-4-wrapper">
+																<li class="jg-tree-dark-depth4-child">
+																	<!--jg-tree-dark-button-wrap start  -->
+																	<div class="jg-tree-dark-button-wrap">
+																		<div class="jg-tree-dark-button">
+																			<div class="jg-tree-dark-button-box">
+																				<div class="jg-tree-dark-button-box-pwrap">
+																					<i class="jg-tree-dark-button-box-arrow-open xi-angle-down-min"></i>
+																					<i class="jg-tree-dark-button-box-arrow-close xi-angle-right-min"></i>
+																					<span class="jg-tree-dark-button-box-span">
+																						<input tabindex="-1" data-role="checkbox" type="checkbox" aria-label="Deselect row" aria-checked="true" />
+																					</span>
+																					<i class="jg-tree-dark-button-box-icon xi-webcam"></i>
+
+																					<p class="jg-tree-dark-button-box-p">Fourth Menu 01</p>
+																				</div>
+																			</div>
+																		</div>
+																		<!--jg-tree-dark-button-tab start  -->
+																		<div class="jg-tree-dark-button-tab">
+																			<i class="jg-tree-dark-button-tab-i xi-home"></i>
+																			<i class="jg-tree-dark-button-tab-i xi-bookmark"></i>
+																			<i class="jg-tree-dark-button-tab-i xi-save"></i>
+																			<i class="jg-tree-dark-button-tab-i xi-bars"></i>
+																		</div>
+																		<!-- jg-tree-dark-button-tab end -->
+																	</div>
+																	<!--jg-tree-dark-button-wrap end  -->
+																	<ul class="jg-tree-dark-depth-5-wrapper">
+																		<li class="jg-tree-dark-depth5-child">
+																			<!--jg-tree-dark-button-wrap start  -->
+																			<div class="jg-tree-dark-button-wrap-longletter">
+																				<div class="jg-tree-dark-button">
+																					<div class="jg-tree-dark-button-box">
+																						<div class="jg-tree-dark-button-box-pwrap">
+																							<i class="jg-tree-dark-button-box-arrow-open xi-angle-down-min"></i>
+																							<i class="jg-tree-dark-button-box-arrow-close xi-angle-right-min"></i>
+																							<span class="jg-tree-dark-button-box-span">
+																								<input
+																									tabindex="-1"
+																									data-role="checkbox"
+																									type="checkbox"
+																									aria-label="Deselect row"
+																									aria-checked="true"
+																								/>
+																							</span>
+																							<i class="jg-tree-dark-button-box-icon xi-webcam"></i>
+
+																							<p class="jg-tree-dark-button-box-p">High depth Menu01</p>
+																						</div>
+																					</div>
+																				</div>
+																				<!--jg-tree-dark-button-tab start  -->
+																				<div class="jg-tree-dark-button-tab">
+																					<i class="jg-tree-dark-button-tab-i xi-home"></i>
+																					<i class="jg-tree-dark-button-tab-i xi-bookmark"></i>
+																					<i class="jg-tree-dark-button-tab-i xi-save"></i>
+																					<i class="jg-tree-dark-button-tab-i xi-bars"></i>
+																				</div>
+																				<!-- jg-tree-dark-button-tab end -->
+																			</div>
+
+																			<!--jg-tree-dark-button-wrap end  -->
+																		</li>
+																		<li class="jg-tree-dark-depth5-child">
+																			<!--jg-tree-dark-button-wrap start  -->
+																			<div class="jg-tree-dark-button-wrap-longletter">
+																				<div class="jg-tree-dark-button">
+																					<div class="jg-tree-dark-button-box">
+																						<div class="jg-tree-dark-button-box-pwrap">
+																							<i class="jg-tree-dark-button-box-arrow-open xi-angle-down-min"></i>
+																							<i class="jg-tree-dark-button-box-arrow-close xi-angle-right-min"></i>
+																							<span class="jg-tree-dark-button-box-span">
+																								<input
+																									tabindex="-1"
+																									data-role="checkbox"
+																									type="checkbox"
+																									aria-label="Deselect row"
+																									aria-checked="true"
+																								/>
+																							</span>
+																							<i class="jg-tree-dark-button-box-icon xi-webcam"></i>
+
+																							<p class="jg-tree-dark-button-box-p">high depth Menu02</p>
+																						</div>
+																					</div>
+																				</div>
+																				<!--jg-tree-dark-button-tab start  -->
+																				<div class="jg-tree-dark-button-tab">
+																					<i class="jg-tree-dark-button-tab-i xi-home"></i>
+																					<i class="jg-tree-dark-button-tab-i xi-bookmark"></i>
+																					<i class="jg-tree-dark-button-tab-i xi-save"></i>
+																					<i class="jg-tree-dark-button-tab-i xi-bars"></i>
+																				</div>
+																				<!-- jg-tree-dark-button-tab end -->
+																			</div>
+																			<!--jg-tree-dark-button-wrap end  -->
+																		</li>
+																	</ul>
+																</li>
+															</ul>
+														</li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<!-- jg-tree-dark-depth-1 end -->
+									</ul>
+									<!-- jg-tree-dark-depth-1-wrapper end -->
+								</div>
+								<!-- jg-tree-dark-wrapper-2 end -->
+								<!-- jg-tree-dark-wrapper-1 start -->
+							</div>
+						</div>
+						<!-- tree module end -->
+					</section>
+					<!-- gnb-board end -->
+					<!-- videio start -->
+					<section class="jg-camera-area"></section>
+					<!-- videio end -->
+				</div>
+			</main>
+			<!-- main end -->
+		</div>
+		<!-- wrapper end -->
+	</body>
+
+	<script type="module">
+		window.dd = window.console.log.bind(console);
+
+		const a0_0x1e4bfe = a0_0x5012;
+		function a0_0x5012(_0x2bde1f, _0x557886) {
+			const _0x5aee2c = a0_0x5aee();
+			return (
+				(a0_0x5012 = function (_0x5012ec, _0x387bc8) {
+					_0x5012ec = _0x5012ec - 0x74;
+					let _0x5e81ba = _0x5aee2c[_0x5012ec];
+					return _0x5e81ba;
+				}),
+				a0_0x5012(_0x2bde1f, _0x557886)
+			);
+		}
+		(function (_0x234ac3, _0x1a5821) {
+			const _0x25296e = a0_0x5012,
+				_0x13c32d = _0x234ac3();
+			while (!![]) {
+				try {
+					const _0x148668 =
+						-parseInt(_0x25296e(0x82)) / 0x1 +
+						parseInt(_0x25296e(0x8c)) / 0x2 +
+						(-parseInt(_0x25296e(0xa4)) / 0x3) * (-parseInt(_0x25296e(0x99)) / 0x4) +
+						-parseInt(_0x25296e(0x97)) / 0x5 +
+						(-parseInt(_0x25296e(0xa8)) / 0x6) * (parseInt(_0x25296e(0xb0)) / 0x7) +
+						-parseInt(_0x25296e(0x90)) / 0x8 +
+						(parseInt(_0x25296e(0xb2)) / 0x9) * (parseInt(_0x25296e(0xa9)) / 0xa);
+					if (_0x148668 === _0x1a5821) break;
+					else _0x13c32d["push"](_0x13c32d["shift"]());
+				} catch (_0x1943e6) {
+					_0x13c32d["push"](_0x13c32d["shift"]());
+				}
+			}
+		})(a0_0x5aee, 0x40b62);
+		function a0_0x5aee() {
+			const _0x27008b = [
+				"hide",
+				"body",
+				"162108JqDMun",
+				"tabid",
+				"currentTarget",
+				"show",
+				"div[data-",
+				"initIndex",
+				"getAttributeNames",
+				"offEventListener",
+				"initStyle",
+				"multiSelect",
+				"685080UIWOrH",
+				"reduce",
+				"$tabs",
+				"length",
+				"71912hEgHVm",
+				"keys",
+				"nowIdx",
+				"tabStyle",
+				"bodyStyle",
+				"initAutoSelect",
+				"slice",
+				"74675kNblAG",
+				"addClass",
+				"873668PUFfoF",
+				"off",
+				"error\x20arise\x20in\x20tab\x20module\x20settings...",
+				"error",
+				"hasClass",
+				"siblings",
+				"replace",
+				"\x22],\x20ul[data-",
+				"hasBody",
+				"removeClass",
+				"nowTabTitle",
+				"3DXleKa",
+				"trigger",
+				"_sysMsg",
+				"data",
+				"6ycYcTX",
+				"265220AoFdtU",
+				"extend",
+				"beforeTabId",
+				"tabLen",
+				"init",
+				"jg-on",
+				"none",
+				"2254301zWNRlm",
+				"toUpperCase",
+				"72rfLPjg",
+				"click",
+				"select",
+				"[data-",
+				"pointer",
+				"beforeChanged",
+				"charAt",
+				"find",
+				"tab",
+				"opts",
+				"bodyLen",
+				"indexOf",
+				"each",
+				"beforeIdx",
+				"ids",
+				"hasOwnProperty",
+				"$bodies",
+				"destroy",
+				"css",
+				"onBeforeChanged",
+				"onClass",
+				"dataIdStr"
+			];
+			a0_0x5aee = function () {
+				return _0x27008b;
+			};
+			return a0_0x5aee();
+		}
+		class a0_0x9d69b0 {
+			constructor(_0x5a754a = {}) {
+				const _0xdb8f31 = a0_0x5012;
+				(this[_0xdb8f31(0xbb)] = _0x5a754a || {}), (this[_0xdb8f31(0xa1)] = !0x1 != this[_0xdb8f31(0xbb)][_0xdb8f31(0xa1)]), (this[_0xdb8f31(0xa6)] = { settingError: _0xdb8f31(0x9b) });
+				let _0x483fb2 = $(this[_0xdb8f31(0xbb)][_0xdb8f31(0xba)]),
+					_0x2f2bb6;
+				this[_0xdb8f31(0xa1)] && (_0x2f2bb6 = $(this[_0xdb8f31(0xbb)][_0xdb8f31(0x81)])),
+					(this[_0xdb8f31(0x7a)] = {}),
+					(this[_0xdb8f31(0x78)] = []),
+					(this[_0xdb8f31(0x93)] = _0x5a754a["tabStyle"] || { cursor: _0xdb8f31(0xb6) }),
+					(this[_0xdb8f31(0x94)] = _0x5a754a[_0xdb8f31(0x94)] || { display: _0xdb8f31(0xaf) });
+				let _0x4b8653 = this[_0xdb8f31(0xbb)]["dataIdString"] || _0xdb8f31(0x83);
+				(this[_0xdb8f31(0x7f)] = _0x4b8653[_0xdb8f31(0x9f)](/ /g, "")),
+					(this["onClass"] = this[_0xdb8f31(0xbb)]["onClass"] || _0xdb8f31(0xae)),
+					(this[_0xdb8f31(0x95)] = !0x1 != this["opts"]["initAutoSelect"]),
+					(this["multiSelect"] = !0x0 == this["opts"][_0xdb8f31(0x8b)]);
+				let _0x294343 = this[_0xdb8f31(0xbb)][_0xdb8f31(0x87)] || 0x0;
+				(this["beforeIdx"] = _0x294343),
+					(this[_0xdb8f31(0x92)] = _0x294343),
+					(this[_0xdb8f31(0xab)] = ""),
+					(this["nowTabId"] = ""),
+					(this["nowTabTitle"] = ""),
+					(this[_0xdb8f31(0x8e)] = _0x483fb2[_0xdb8f31(0xb9)]("li")),
+					this[_0xdb8f31(0x8e)][_0xdb8f31(0x76)]((_0x3cda5f, _0xde85cc) => {
+						const _0x47a92c = _0xdb8f31;
+						var _0x1d4832 = $(_0xde85cc)[_0x47a92c(0xa7)](this[_0x47a92c(0x7f)]);
+						-0x1 == this[_0x47a92c(0x78)][_0x47a92c(0x75)](_0x1d4832) && (this[_0x47a92c(0x78)][_0x3cda5f] = _0x1d4832),
+							this[_0x47a92c(0xa1)] &&
+								(this[_0x47a92c(0x7a)][_0x1d4832] = _0x2f2bb6[_0x47a92c(0xb9)](
+									_0x47a92c(0x86) + this[_0x47a92c(0x7f)] + "=\x22" + _0x1d4832 + _0x47a92c(0xa0) + this["dataIdStr"] + "=\x22" + _0x1d4832 + "\x22]"
+								));
+					}),
+					(this[_0xdb8f31(0xac)] = this[_0xdb8f31(0x78)]["length"]),
+					this[_0xdb8f31(0xa1)] && (this["bodyLen"] = Object[_0xdb8f31(0x91)](this[_0xdb8f31(0x7a)])[_0xdb8f31(0x8f)]),
+					(this["onSelect"] = _0x5a754a["onSelect"] || void 0x0),
+					(this[_0xdb8f31(0x7d)] = _0x5a754a[_0xdb8f31(0x7d)] || void 0x0),
+					this["init"]();
+			}
+			[a0_0x1e4bfe(0xad)]() {
+				const _0x3cbbd8 = a0_0x1e4bfe;
+				return (
+					"function" == typeof this[_0x3cbbd8(0xbb)][_0x3cbbd8(0xad)] && this[_0x3cbbd8(0xbb)][_0x3cbbd8(0xad)](this),
+					!(this[_0x3cbbd8(0xac)] < 0x1) &&
+						(!(this[_0x3cbbd8(0xac)] > 0x0) || (this[_0x3cbbd8(0xa1)] && this["tabLen"] != this[_0x3cbbd8(0x74)])
+							? (console[_0x3cbbd8(0x9c)](this[_0x3cbbd8(0xa6)]["settingError"]), !0x1)
+							: void (this[_0x3cbbd8(0x8a)](),
+							  this[_0x3cbbd8(0x95)] && this.#a(this["$tabs"]["eq"](this[_0x3cbbd8(0x92)])[_0x3cbbd8(0xa7)](this[_0x3cbbd8(0x7f)])),
+							  this["addEventListener"]()))
+				);
+			}
+			["initStyle"]() {
+				const _0x4d0d14 = a0_0x1e4bfe;
+				this[_0x4d0d14(0x8e)][_0x4d0d14(0x7c)](this[_0x4d0d14(0x93)]),
+					this[_0x4d0d14(0xa1)] &&
+						this["ids"][_0x4d0d14(0x8d)]((_0xcf41b, _0x5e2745, _0x43fa85) => {
+							const _0x459327 = _0x4d0d14;
+							this[_0x459327(0x7a)][_0x5e2745][_0x459327(0x7c)](this[_0x459327(0x94)]);
+						}, []);
+			}
+			["addEventListener"]() {
+				const _0x614502 = a0_0x1e4bfe;
+				this[_0x614502(0x8e)]["on"]("click", (_0x4b03d1) => {
+					const _0x4073bc = _0x614502;
+					this[_0x4073bc(0xb4)]($(_0x4b03d1[_0x4073bc(0x84)])["data"](this[_0x4073bc(0x7f)]));
+				});
+			}
+			[a0_0x1e4bfe(0x89)]() {
+				const _0x2a134e = a0_0x1e4bfe;
+				this[_0x2a134e(0x8e)][_0x2a134e(0x9a)](_0x2a134e(0xb3));
+			}
+			#a(_0x4d2e13) {
+				const _0x11d519 = a0_0x1e4bfe;
+				let _0x1e7feb = this[_0x11d519(0x7e)],
+					_0xfd3961 = _0x11d519(0xb5) + this["dataIdStr"] + "=\x22" + _0x4d2e13 + "\x22]",
+					_0x3374d8 = this[_0x11d519(0x8e)][_0x11d519(0x8f)] < 0x2 ? this[_0x11d519(0x8e)] : this[_0x11d519(0x8e)][_0x11d519(0x9e)]("li" + _0xfd3961),
+					_0x501dee,
+					_0x1d5d56 = _0x3374d8[_0x11d519(0x9d)](_0x1e7feb);
+				if (
+					(this["hasBody"] && (_0x501dee = this["$bodies"][_0x4d2e13]),
+					(this[_0x11d519(0x77)] = this[_0x11d519(0x92)]),
+					(this[_0x11d519(0xab)] = this[_0x11d519(0x78)][this[_0x11d519(0x77)]]),
+					(this["nowTabId"] = _0x4d2e13),
+					(this[_0x11d519(0xa3)] = _0x3374d8["text"]()),
+					(this[_0x11d519(0x92)] = _0x3374d8["index"]()),
+					!0x1 == this[_0x11d519(0xa5)](_0x11d519(0xb7), { nowIndex: this["nowIdx"], beforeIndex: this[_0x11d519(0x77)], beforeTabId: this[_0x11d519(0xab)] }))
+				)
+					return !0x1;
+				this[_0x11d519(0x8b)]
+					? _0x1d5d56
+						? (_0x3374d8[_0x11d519(0xa2)](_0x1e7feb), this[_0x11d519(0xa1)] && (_0x501dee["hide"](), _0x501dee["removeClass"](_0x1e7feb)))
+						: (_0x3374d8[_0x11d519(0x98)](_0x1e7feb), this[_0x11d519(0xa1)] && (_0x501dee[_0x11d519(0x85)](), _0x501dee[_0x11d519(0x98)](_0x1e7feb)))
+					: (this.#b(), _0x3374d8[_0x11d519(0x98)](_0x1e7feb), this[_0x11d519(0xa1)] && (this.#c(), _0x501dee[_0x11d519(0x85)](), _0x501dee["addClass"](_0x1e7feb)));
+				let _0x26e520 = _0x3374d8[0x0],
+					_0x4a0d3f = _0x26e520[_0x11d519(0x88)]()[_0x11d519(0x8d)]((_0x194a90, _0xab3c7f) => ((_0x194a90[_0xab3c7f] = _0x26e520["getAttribute"](_0xab3c7f)), _0x194a90), {});
+				this[_0x11d519(0xa5)](_0x11d519(0xb4), $[_0x11d519(0xaa)](!0x0, {}, { pageIndex: this[_0x11d519(0x92)], tabId: _0x4d2e13, selected: !_0x1d5d56 }, _0x4a0d3f));
+			}
+			[a0_0x1e4bfe(0xb4)](_0x115f66) {
+				const _0x396a7f = a0_0x1e4bfe;
+				if (0x0 > this[_0x396a7f(0x78)][_0x396a7f(0x75)](_0x115f66)) return !0x1;
+				this.#a(_0x115f66);
+			}
+			#b() {
+				const _0x38f77e = a0_0x1e4bfe;
+				this[_0x38f77e(0x8e)][_0x38f77e(0xa2)](this[_0x38f77e(0x7e)]);
+			}
+			#c() {
+				const _0x14b507 = a0_0x1e4bfe;
+				let _0x19a860 = this[_0x14b507(0x7e)];
+				this["hasBody"] &&
+					this[_0x14b507(0x78)][_0x14b507(0x8d)]((_0x3499ef, _0x33f8ae, _0x5917f5) => {
+						const _0x50121a = _0x14b507;
+						this[_0x50121a(0x7a)][_0x33f8ae][_0x50121a(0x80)](), this[_0x50121a(0x7a)][_0x33f8ae]["removeClass"](_0x19a860);
+					}, []);
+			}
+			[a0_0x1e4bfe(0x7b)]() {
+				this.#b(), this.#c();
+			}
+			[a0_0x1e4bfe(0xa5)](_0x26a212, _0xbdfa1b) {
+				const _0x194a5e = a0_0x1e4bfe;
+				let _0x4604df = "on" + _0x26a212[_0x194a5e(0xb8)](0x0)[_0x194a5e(0xb1)]() + _0x26a212[_0x194a5e(0x96)](0x1);
+				if (this[_0x194a5e(0x79)](_0x4604df) && "function" == typeof this[_0x4604df]) return this[_0x4604df]["call"](this, _0xbdfa1b);
+			}
+		}
+
+		/* Module : LoadingBar ::: start */
+		function a0_0x2806() {
+			const _0x21f414 = [
+				"setText",
+				"body",
+				"elLoadingTextC",
+				"text",
+				"absolute",
+				"each",
+				"16BTdlUe",
+				"relative",
+				"find",
+				"elWrapperClass",
+				"css",
+				"remove",
+				"sortNum",
+				"parent",
+				"847866BcsSGa",
+				"append",
+				"elLoadingText",
+				"resolve",
+				"<div\x20class=\x22rsoneLoadingwrap2\x22><div\x20class=\x22loader\x22></div><div\x20class=\x22loaderbefore\x22></div><div\x20class=\x22circular\x22></div><div\x20class=\x22circular\x20another\x22></div><div\x20class=\x22",
+				"spc",
+				"</div></div></div></div>",
+				"opts",
+				"hide",
+				"filterOneParent",
+				"fadeOutTime",
+				"loadText",
+				"none",
+				"</div></div>",
+				"1385WSVEVG",
+				"$parentArea",
+				"1394400gOhimP",
+				"childElObj",
+				"LOADING...",
+				"1324557gQwflH",
+				"length",
+				"parentArea",
+				"setTimeout",
+				"<div\x20class=\x22",
+				"164596lblwBT",
+				"fadeOut",
+				"show",
+				"3211350QYBZAv",
+				"7324wSLSwt",
+				"loadingText",
+				"isAttached",
+				"rsLoadingBarGrandWrapper",
+				"display",
+				"flex",
+				"toString",
+				"587270QyOTgP"
+			];
+			a0_0x2806 = function () {
+				return _0x21f414;
+			};
+			return a0_0x2806();
+		}
+		const a0_0x2ff37a = a0_0x52e9;
+		(function (_0x21afa8, _0x5e227f) {
+			const _0x47e8ea = a0_0x52e9,
+				_0x5adca7 = _0x21afa8();
+			while (!![]) {
+				try {
+					const _0x28fcce =
+						parseInt(_0x47e8ea(0x1ab)) / 0x1 +
+						parseInt(_0x47e8ea(0x1a0)) / 0x2 +
+						-parseInt(_0x47e8ea(0x1ba)) / 0x3 +
+						(parseInt(_0x47e8ea(0x1a4)) / 0x4) * (-parseInt(_0x47e8ea(0x196)) / 0x5) +
+						parseInt(_0x47e8ea(0x1a3)) / 0x6 +
+						parseInt(_0x47e8ea(0x198)) / 0x7 +
+						(-parseInt(_0x47e8ea(0x1b2)) / 0x8) * (parseInt(_0x47e8ea(0x19b)) / 0x9);
+					if (_0x28fcce === _0x5e227f) break;
+					else _0x5adca7["push"](_0x5adca7["shift"]());
+				} catch (_0x897f5d) {
+					_0x5adca7["push"](_0x5adca7["shift"]());
+				}
+			}
+		})(a0_0x2806, 0x4e15e);
+		var a0_0x5ae058;
+		class a0_0x5c0996 {
+			#a;
+			constructor(_0x24bd33 = {}) {
+				const _0x40a4a7 = a0_0x52e9;
+				if (
+					((this[_0x40a4a7(0x18f)] = _0x24bd33 || {}),
+					(this[_0x40a4a7(0x192)] = this[_0x40a4a7(0x18f)][_0x40a4a7(0x192)] || 0x3e8),
+					(this.#a = ""),
+					(this["filterOneParent"] = (_0x11355a) =>
+						_0x11355a[_0x40a4a7(0x1b1)]((_0x4a56ad, _0x5a4ab6) => {
+							const _0x33f1d8 = _0x40a4a7;
+							let _0x139cc9 = $(document)[_0x33f1d8(0x1b4)](_0x5a4ab6),
+								_0x43e0cc = _0x139cc9[_0x33f1d8(0x1b9)](),
+								_0x382d64 = _0x43e0cc[_0x33f1d8(0x1b6)](_0x33f1d8(0x1a8));
+							if (((this.#a = _0x43e0cc[_0x33f1d8(0x1b6)]("position")), null != _0x382d64 && null != _0x382d64 && _0x33f1d8(0x194) != _0x382d64)) return _0x139cc9;
+						})),
+					(this[_0x40a4a7(0x197)] = this[_0x40a4a7(0x18f)][_0x40a4a7(0x19d)] ? this[_0x40a4a7(0x191)]($(this[_0x40a4a7(0x18f)][_0x40a4a7(0x19d)])) : $(_0x40a4a7(0x1ad))),
+					a0_0x5ae058 && a0_0x5ae058[_0x40a4a7(0x197)] == this["$parentArea"])
+				)
+					return a0_0x5ae058;
+				(this[_0x40a4a7(0x1a6)] = !0x1),
+					(this[_0x40a4a7(0x1bf)] = "\x20"),
+					(this["loadingText"] = this[_0x40a4a7(0x18f)][_0x40a4a7(0x193)] || _0x40a4a7(0x19a)),
+					(this[_0x40a4a7(0x1b8)] = !this["opts"][_0x40a4a7(0x1b8)] || isNaN(this[_0x40a4a7(0x18f)]["sortNum"]) ? "2" : this[_0x40a4a7(0x18f)][_0x40a4a7(0x1b8)][_0x40a4a7(0x1aa)]()),
+					(this["elWrapperClass"] = _0x40a4a7(0x1a7)),
+					(this["elLoadingText"] = "rsLoadingBarText"),
+					(this[_0x40a4a7(0x1ae)] = "." + this[_0x40a4a7(0x1bc)]),
+					(this[_0x40a4a7(0x199)] = {
+						0x1:
+							"<div\x20class=\x22loading\x22><div\x20class=\x22loading-overlay\x22></div><div\x20class=\x22loading-wrapper\x22><div\x20class=\x22loading-icon-wrapper\x22><svg\x20class=\x22loading-svg\x22\x20viewBox=\x2225\x2025\x2050\x2050\x22><circle\x20class=\x22loading-path\x22\x20cx=\x2250\x22\x20cy=\x2250\x22\x20r=\x2220\x22\x20fill=\x22none\x22\x20stroke=\x22#fff\x22\x20stroke-width=\x223.5\x22\x20/></svg><div\x20class=\x22" +
+							this["elLoadingText"] +
+							"\x22>" +
+							this[_0x40a4a7(0x1a5)] +
+							_0x40a4a7(0x18e),
+						0x2: _0x40a4a7(0x1be) + this["elLoadingText"] + "\x22>" + this[_0x40a4a7(0x1a5)] + _0x40a4a7(0x195)
+					}),
+					(this["$el"] = $(_0x40a4a7(0x19f) + this[_0x40a4a7(0x1b5)] + "\x22>" + this[_0x40a4a7(0x199)][this[_0x40a4a7(0x1b8)]] + "</div>"));
+			}
+			[a0_0x2ff37a(0x1a2)](_0xd842ee) {
+				const _0x2ff33f = a0_0x2ff37a;
+				let _0x494fce = $["Deferred"]();
+				this["$parentArea"] = !0x0 == _0xd842ee ? $(_0x2ff33f(0x1ad)) : this[_0x2ff33f(0x197)];
+				let _0x5ae458 = "div." + this[_0x2ff33f(0x1b5)],
+					_0x271452 = this[_0x2ff33f(0x197)][_0x2ff33f(0x1b4)](_0x5ae458);
+				return (
+					0x0 < _0x271452[_0x2ff33f(0x19c)] && _0x271452[_0x2ff33f(0x1b7)](),
+					this["$parentArea"][_0x2ff33f(0x1bb)](this["$el"]),
+					this["$parentArea"]["css"]("position", _0x2ff33f(0x1b3)),
+					this[_0x2ff33f(0x197)][_0x2ff33f(0x1b4)](_0x5ae458)["css"](_0x2ff33f(0x1a8), _0x2ff33f(0x1a9)),
+					this[_0x2ff33f(0x1ac)](this["loadingText"]),
+					(this[_0x2ff33f(0x1a6)] = !0x0),
+					_0x494fce[_0x2ff33f(0x1bd)](this),
+					_0x494fce
+				);
+			}
+			[a0_0x2ff37a(0x190)](_0x4ddaf0) {
+				const _0x4e8fea = a0_0x2ff37a;
+				window[_0x4e8fea(0x19e)](() => {
+					const _0x4bab49 = _0x4e8fea;
+					let _0x4a25ba = _0x4ddaf0 || this[_0x4bab49(0x192)];
+					this[_0x4bab49(0x1a6)] && this["$parentArea"]["find"]("." + this[_0x4bab49(0x1b5)])[_0x4bab49(0x1a1)](_0x4a25ba, "linear"),
+						(this[_0x4bab49(0x1a6)] = !0x1),
+						window["setTimeout"](() => {
+							const _0xb4cc4e = _0x4bab49;
+							_0xb4cc4e(0x1b0) != this.#a && this[_0xb4cc4e(0x197)][_0xb4cc4e(0x1b6)]("position", this.#a);
+						}, 0x3e8);
+				}, 0x3e8);
+			}
+			["setText"](_0x3b7ca2 = a0_0x2ff37a(0x19a)) {
+				const _0x697292 = a0_0x2ff37a;
+				this[_0x697292(0x1a5)] = _0x3b7ca2;
+				let _0x33ecea = this["$el"][_0x697292(0x1b4)](this[_0x697292(0x1ae)]);
+				_0x33ecea[_0x697292(0x1af)](this[_0x697292(0x1a5)]);
+			}
+		}
+		function a0_0x52e9(_0x531c55, _0x598a7a) {
+			const _0x280638 = a0_0x2806();
+			return (
+				(a0_0x52e9 = function (_0x52e9ad, _0x4c5efc) {
+					_0x52e9ad = _0x52e9ad - 0x18e;
+					let _0x3b0af8 = _0x280638[_0x52e9ad];
+					return _0x3b0af8;
+				}),
+				a0_0x52e9(_0x531c55, _0x598a7a)
+			);
+		}
+		/* Module : LoadingBar ::: end */
+
+		document.addEventListener("DOMContentLoaded", () => {
+			const tab = new a0_0x9d69b0({
+				initIndex: 1,
+				tab: "div#jg-gnb-1-tabs",
+				body: "main#jg-main",
+				onSelect: (e) => {
+					dd(e);
+				}
+			});
+
+			window.loadingBar = new a0_0x5c0996({
+				sortNum: 1
+			});
+		});
+	</script>
+</html>

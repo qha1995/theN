@@ -1,0 +1,105 @@
+{
+	/* Sass */
+	"liveSassCompile": {
+		"settings": {
+			"includeItems": ["/Jg/pub/scss/*.scss"],
+			"excludeList": ["/**/node_modules/**", "/.vscode/**", "/**/lib/**"],
+			"generateMap": true,
+			"formats": [
+				{
+					"format": "expanded",
+					"extensionName": ".css",
+					"savePath": "~/../css"
+				},
+				{
+					"format": "compressed",
+					"extensionName": ".min.css",
+					"savePath": "~/../css"
+				}
+			]
+		}
+	},
+	/* LiveServer */
+	"liveServer": {
+		"settings": {
+			"port": 10777,
+			"donotShowInfoMsg": true
+		}
+	},
+	/* files */
+	"files": {
+		"autoSave": "onWindowChange"
+	},
+	/* WorkBench */
+	"workbench": {
+		"colorTheme": "Dark Modern"
+	},
+	/* Editor */
+	"editor": {
+		"defaultFormatter": "esbenp.prettier-vscode",
+		"formatOnSave": true,
+		"fontSize": 15,
+		"tabSize": 4
+	},
+	"[javascript]": {
+		"editor": {
+			"defaultFormatter": "esbenp.prettier-vscode"
+		}
+	},
+	"[javascriptreact]": {
+		"editor": {
+			"defaultFormatter": "esbenp.prettier-vscode"
+		}
+	},
+	"[typescript]": {
+		"editor": {
+			"defaultFormatter": "esbenp.prettier-vscode"
+		}
+	},
+	"[typescriptreact]": {
+		"editor": {
+			"defaultFormatter": "esbenp.prettier-vscode"
+		}
+	},
+	"[json]": {
+		"editor": {
+			"defaultFormatter": "esbenp.prettier-vscode"
+		}
+	},
+	"[html]": {
+		"editor": {
+			"defaultFormatter": "esbenp.prettier-vscode"
+		}
+	},
+	"[css]": {
+		"editor": {
+			"defaultFormatter": "esbenp.prettier-vscode"
+		}
+	},
+	"[scss]": {
+		"editor": {
+			"defaultFormatter": "esbenp.prettier-vscode"
+		}
+	},
+	"[markdown]": {
+		"editor": {
+			"defaultFormatter": "esbenp.prettier-vscode"
+		}
+	},
+	"[java]": {
+		"editor": {
+			"defaultFormatter": "esbenp.prettier-vscode"
+		}
+	},
+	"[properties]": {
+		"editor": {
+			"defaultFormatter": "esbenp.prettier-vscode"
+		}
+	},
+	"[xml]": {
+		"editor": {
+			"defaultFormatter": "esbenp.prettier-vscode"
+		}
+	},
+	"workbench.colorTheme": "Default Dark Modern"
+}

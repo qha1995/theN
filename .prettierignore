@@ -1,0 +1,58 @@
+# ignore git related files
+**/.git
+**/.svn
+**/.hg
+.gitignore
+.gitattributes
+
+# ignore map files
+*.map
+
+# ignore minified files
+*.min.js
+*.min.css
+
+# ignore dependencies
+**/node_modules
+/node_modules
+node_modules
+
+# ignore build files
+/build
+/dist
+
+# ignore generated files
+/generated
+
+# ignore font files
+*.ttf
+*.woff
+*.woff2
+*.eot
+
+# ignore images or binary files
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svgz
+*.bmp
+*.ico
+*.svg
+
+# ignore log files
+*.log
+
+# ignore IDE configuration files
+/.idea
+
+# ignore documentation
+/doc
+/docs
+
+# etc
+*.txt
+*.jar
+dist
+package.json
+package-lock.json
