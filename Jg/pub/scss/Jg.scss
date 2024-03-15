@@ -636,6 +636,15 @@ body {
 							}
 						}
 					}
+					// 리스트 펴고 접기. default는 open, 클릭 시 close로
+					.jg-close {
+						.jg-tree-dark-button-box-arrow-close {
+							display: block;
+						}
+						.jg-tree-dark-button-box-arrow-open {
+							display: none;
+						}
+					}
 					position: relative;
 					// 호버했을 때
 					&:hover {

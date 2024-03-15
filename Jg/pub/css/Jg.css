@@ -565,6 +565,12 @@ body {
 .jg-main .jg-camera-list .jg-tree-dark-button-wrap .jg-active .jg-tree-dark-button-box-pwrap::after {
   background-color: #282828;
 }
+.jg-main .jg-camera-list .jg-tree-dark-button-wrap .jg-close .jg-tree-dark-button-box-arrow-close {
+  display: block;
+}
+.jg-main .jg-camera-list .jg-tree-dark-button-wrap .jg-close .jg-tree-dark-button-box-arrow-open {
+  display: none;
+}
 .jg-main .jg-camera-list .jg-tree-dark-button-wrap:hover {
   background-color: #282828;
   color: #fff;
