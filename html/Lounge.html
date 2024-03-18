@@ -104,7 +104,7 @@
 				<div data-tabid="map">map 입니다.</div>
 				<div data-tabid="setting">setting 입니다.</div>
 				<div data-tabid="user">user 입니다.</div>
-				<div data-tabid="camera">
+				<div data-tabid="camera" class="camera">
 					<!-- gnb-board start -->
 					<section class="jg-camera-list">
 						<!-- tree module start -->
@@ -554,7 +554,57 @@
 					</section>
 					<!-- gnb-board end -->
 					<!-- videio start -->
-					<section class="jg-camera-area"></section>
+					<section class="jg-camera-area">
+						<!-- 호출 wrapper (사용자:개발자) -->
+						<div class="Jg-ss-split-wrap">
+							<!-- 
+									gs -> Jg 로 변경
+								1. Jg-ss-split : default class
+					
+								2. Jg-ss-vert : Vertial
+								   Jg-ss-hori : Horizontal
+								   Jg-ss-equa2 : Column 2 Split
+								   Jg-ss-equa3 : Column 3 Split
+					
+								3. Jg-ss-split-contain : Pattern1
+								   Jg-ss-split-fit : Pattern2
+								   Jg-ss-split-fill : Pattern3
+							 -->
+
+							<div class="Jg-ss-split Jg-ss-equa3 Jg-ss-split-fill">
+								<div class="Jg-ss-split-item">
+									<video class="Jg-ss-video" autoplay src="../Jg/pub/img/sample-5s.mp4"></video>
+								</div>
+								<div class="Jg-ss-split-item">
+									<video class="Jg-ss-video" autoplay src="../Jg/pub/img/sample-5s.mp4"></video>
+								</div>
+								<div class="Jg-ss-split-item">
+									<video class="Jg-ss-video" autoplay src="../Jg/pub/img/sample-5s.mp4"></video>
+								</div>
+								<div class="Jg-ss-split-item">
+									<video class="Jg-ss-video" autoplay src="../Jg/pub/img/sample-5s.mp4"></video>
+								</div>
+								<div class="Jg-ss-split-item">
+									<video class="Jg-ss-video" autoplay src="../Jg/pub/img/sample-5s.mp4"></video>
+								</div>
+								<div class="Jg-ss-split-item">
+									<video class="Jg-ss-video" autoplay src="../Jg/pub/img/sample-5s.mp4"></video>
+								</div>
+								<div class="Jg-ss-split-item">
+									<video class="Jg-ss-video" autoplay src="../Jg/pub/img/sample-5s.mp4"></video>
+								</div>
+								<div class="Jg-ss-split-item">
+									<!-- 동적 기능이 필요한 부분. -->
+									<!-- Content 가 없는 경우 -->
+									<!-- 아래와 같이 p 태그로 numbering. -->
+									<p class="Jg-ss-split-number">8</p>
+								</div>
+								<div class="Jg-ss-split-item">
+									<p class="Jg-ss-split-number">9</p>
+								</div>
+							</div>
+						</div>
+					</section>
 					<!-- videio end -->
 				</div>
 			</main>

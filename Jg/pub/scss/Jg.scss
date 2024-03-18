@@ -1,11 +1,153 @@
 @charset "utf-8";
 
 :root {
+	/* Screen Split Module */
+	--Jg-ss-split-wrap-border-width: 0px;
+	--Jg-ss-split-wrap-border-style: solid;
+	--Jg-ss-split-wrap-border-color: transparent;
+	--Jg-ss-split-wrap-border-type: var(--Jg-ss-split-wrap-border-width) var(--Jg-ss-split-wrap-border-style);
+	--Jg-ss-split-wrap-border: var(--Jg-ss-split-wrap-border-type) var(--Jg-ss-split-wrap-border-color);
+	--Jg-ss-split-wrap-bg: #11111;
+
+	--Jg-ss-split-item-border-width: 5px;
+	--Jg-ss-split-item-border-style: solid;
+	--Jg-ss-split-item-border-color: #111111;
+	--Jg-ss-split-item-border-type: var(--Jg-ss-split-item-border-width) var(--Jg-ss-split-item-border-style);
+	--Jg-ss-split-item-border: var(--Jg-ss-split-item-border-type) var(--Jg-ss-split-item-border-color);
+
+	--Jg-ss-split-number-font-size: 16px;
+	--Jg-ss-split-number-font-color: #ddd;
 }
 body {
 	background-color: #111;
 	color: #fff;
 	font-family: "MinSans-Bold-700";
+}
+$color_1: var(--Jg-ss-split-number-font-color);
+$background-color_1: var(--Jg-ss-split-wrap-bg);
+
+.camera {
+	height: calc(100vh - 115px);
+	font-size: 15px;
+	margin-top: 15px;
+	margin-left: 15px;
+	display: flex;
+	gap: 15px;
+}
+
+.jg-camera-area {
+	/* Screen Split Module Common */
+	/* Vertial */
+	/* Horizontal */
+	/* Equal column 2 split */
+	/* Equal column 3 split */
+	width: 100%;
+
+	.Jg-ss-split-wrap {
+		height: calc(100vh - 115px);
+		width: 100%;
+		height: 100%;
+		.Jg-ss-split {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			.Jg-ss-split-item {
+				display: flex;
+				position: relative;
+				width: 100%;
+				justify-content: center;
+				align-items: center;
+				box-sizing: content-box;
+				.Jg-ss-video {
+					display: block;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					width: 100%;
+					height: 100%;
+				}
+				.Jg-ss-split-number {
+					display: block;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					font-size: var(--Jg-ss-split-number-font-size);
+					color: $color_1;
+				}
+			}
+		}
+		.Jg-ss-split.Jg-ss-split-contain {
+			.Jg-ss-split-item {
+				.Jg-ss-video {
+					object-fit: contain;
+				}
+			}
+		}
+		.Jg-ss-split.Jg-ss-split-fit {
+			.Jg-ss-split-item {
+				.Jg-ss-video {
+					object-fit: cover;
+				}
+			}
+		}
+		.Jg-ss-split.Jg-ss-split-fill {
+			.Jg-ss-split-item {
+				.Jg-ss-video {
+					object-fit: fill;
+				}
+			}
+		}
+		.Jg-ss-vert {
+			flex-flow: row wrap;
+			border: var(--Jg-ss-split-wrap-border);
+			background-color: $background-color_1;
+			.Jg-ss-split-item {
+				&:not(:last-child) {
+					border-bottom: var(--Jg-ss-split-item-border);
+				}
+			}
+		}
+		.Jg-ss-hori {
+			flex-direction: row;
+			border: var(--Jg-ss-split-wrap-border);
+			background-color: $background-color_1;
+			.Jg-ss-split-item {
+				&:not(:last-child) {
+					border-right: var(--Jg-ss-split-item-border);
+				}
+			}
+		}
+		.Jg-ss-equa2 {
+			flex-flow: row wrap;
+			border: var(--Jg-ss-split-wrap-border);
+			background-color: $background-color_1;
+			.Jg-ss-split-item {
+				flex: 1 1 calc((100% - calc(var(--Jg-ss-split-item-border-width) * 1)) / 2);
+				&:not(:nth-child(2n)) {
+					border-right: var(--Jg-ss-split-item-border);
+				}
+				&:not(:nth-last-child(-n + 2)) {
+					border-bottom: var(--Jg-ss-split-item-border);
+				}
+			}
+		}
+		.Jg-ss-equa3 {
+			flex-flow: row wrap;
+			border: var(--Jg-ss-split-wrap-border);
+			background-color: $background-color_1;
+			.Jg-ss-split-item {
+				flex: 1 1 calc((100% - calc(var(--Jg-ss-split-item-border-width) * 2)) / 3);
+				&:not(:nth-child(3n)) {
+					border-right: var(--Jg-ss-split-item-border);
+				}
+				&:not(:nth-last-child(-n + 3)) {
+					border-bottom: var(--Jg-ss-split-item-border);
+				}
+			}
+		}
+	}
 }
 
 .login {
@@ -405,10 +547,7 @@ body {
 		background-color: #1e1e1e;
 		width: 300px;
 		box-shadow: 0px 7px 13px rgba(0, 0, 0, 0.6);
-		height: calc(100vh - 115px);
-		font-size: 15px;
-		margin-top: 15px;
-		margin-left: 15px;
+
 		.jg-tree-dark {
 			&-wrapper-1 {
 				width: 100%;
@@ -774,12 +913,12 @@ body {
 			}
 		}
 	}
-	.jg-camera {
-		position: absolute;
-		top: 15px;
-		left: 330px;
-		width: calc(100% - 345px);
-		background-color: #222;
-		height: calc(100vh - 130px);
-	}
+	// .jg-camera {
+	// 	position: absolute;
+	// 	top: 15px;
+	// 	left: 330px;
+	// 	width: calc(100% - 345px);
+	// 	background-color: #222;
+	// 	height: calc(100vh - 130px);
+	// }
 }
