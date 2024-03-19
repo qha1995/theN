@@ -19,55 +19,54 @@
 
 /* font */
 @font-face {
-	font-family: 'MinSans-Black-900';
+	font-family: "MinSans-Black-900";
 	font-weight: 900;
-	src: url('../fonts/MinSans-Black.woff2') format('woff2');
+	src: url("../fonts/MinSans-Black.woff2") format("woff2");
+}
+@font-face {
+	font-family: "NotoSans-Black-900";
+	font-weight: 900;
+	src: url("../fonts/NotoSans-Black.woff2") format("woff2");
 }
 
 @font-face {
-	font-family: 'MinSans-ExtraBold-800';
+	font-family: "NotoSans-ExtraBold-800";
 	font-weight: 800;
-	src: url('../fonts/MinSans-ExtraBold.woff2') format('woff2');
+	src: url("../fonts/NotoSans-ExtraBold.woff2") format("woff2");
 }
 
 @font-face {
-	font-family: 'MinSans-Bold-700';
+	font-family: "NotoSans-Bold-700";
 	font-weight: 700;
-	src: url('../fonts/MinSans-Bold.woff2') format('woff2');
+	src: url("../fonts/NotoSans-Bold.woff2") format("woff2");
 }
 
 @font-face {
-	font-family: 'MinSans-SemiBold-600';
-	font-weight: 600;
-	src: url('../fonts/MinSans-SemiBold.woff2') format('woff2');
-}
-
-@font-face {
-	font-family: 'MinSans-Medium-500';
+	font-family: "NotoSans-Medium-500";
 	font-weight: 500;
-	src: url('../fonts/MinSans-Medium.woff2') format('woff2');
+	src: url("../fonts/NotoSans-Medium.woff2") format("woff2");
 }
 
 @font-face {
-	font-family: 'MinSans-Regular-400';
+	font-family: "NotoSans-Regular-400";
 	font-weight: 400;
-	src: url('../fonts/MinSans-Regular.woff2') format('woff2');
+	src: url("../fonts/NotoSans-Regular.woff2") format("woff2");
 }
 
 @font-face {
-	font-family: 'MinSans-Light-300';
+	font-family: "NotoSans-Light-300";
 	font-weight: 300;
-	src: url('../fonts/MinSans-Light.woff2') format('woff2');
+	src: url("../fonts/NotoSans-Light.woff2") format("woff2");
 }
 
 @font-face {
-	font-family: 'MinSans-ExtraLight-200';
+	font-family: "NotoSans-DemiLight-200";
 	font-weight: 200;
-	src: url('../fonts/MinSans-ExtraLight.woff2') format('woff2');
+	src: url("../fonts/NotoSans-DemiLight.woff2") format("woff2");
 }
 
 @font-face {
-	font-family: 'MinSans-Thin-100';
+	font-family: "NotoSans-Thin-100";
 	font-weight: 100;
-	src: url('../fonts/MinSans-Thin.woff2') format('woff2');
+	src: url("../fonts/NotoSans-Thin.woff2") format("woff2");
 }

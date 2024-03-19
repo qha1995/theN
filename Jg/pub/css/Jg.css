@@ -11,14 +11,16 @@
   --Jg-ss-split-item-border-color: #111111;
   --Jg-ss-split-item-border-type: var(--Jg-ss-split-item-border-width) var(--Jg-ss-split-item-border-style);
   --Jg-ss-split-item-border: var(--Jg-ss-split-item-border-type) var(--Jg-ss-split-item-border-color);
-  --Jg-ss-split-number-font-size: 16px;
+  --Jg-ss-split-number-font-size: 15px;
   --Jg-ss-split-number-font-color: #ddd;
+  /* Project */
+  --mc: #fae114;
 }
 
 body {
   background-color: #111;
   color: #fff;
-  font-family: "MinSans-Bold-700";
+  font-family: "NotoSans-Regular-400";
 }
 
 .camera {
@@ -157,9 +159,10 @@ body {
   margin-bottom: 20px;
 }
 .login-figure-box-top-id-i {
-  transform: translateX(-8px);
+  transform: translate(-8px, 3px);
   padding-right: 6px;
   color: #ddd;
+  font-size: 21px;
 }
 .login-figure-box-top-id-input {
   color: #ddd !important;
@@ -182,8 +185,10 @@ body {
   justify-content: center;
 }
 .login-figure-box-top-pw-left-i {
+  transform: translate(0px, 2px);
   padding-right: 6px;
   color: #ddd;
+  font-size: 20px;
 }
 .login-figure-box-top-pw-left-input {
   background-color: #282828 !important;
@@ -199,7 +204,8 @@ body {
 .login-figure-box-top-pw-right {
   cursor: pointer;
   color: #ddd;
-  padding-top: 3px;
+  padding-top: 1px;
+  font-size: 19px;
 }
 .login-figure-box-bottom {
   margin-bottom: 40px;
@@ -212,27 +218,27 @@ body {
   display: flex;
 }
 .login-figure-box-bottom-button-left-findid {
-  font-size: 12px;
+  font-size: 13px;
   margin-right: 10px;
   color: #b5b5b5;
   cursor: pointer;
 }
 .login-figure-box-bottom-button-left-findpw {
-  font-size: 12px;
+  font-size: 13px;
   color: #b5b5b5;
   cursor: pointer;
 }
 .login-figure-box-bottom-button-right-signup {
-  font-size: 12px;
+  font-size: 13px;
   color: #ddd;
   cursor: pointer;
 }
 .login-signin {
-  background-color: #fae114;
+  background-color: var(--mc);
   cursor: pointer;
   padding: 5px 5px;
   border-radius: 5px;
-  font-family: "MinSans-Bold-700";
+  font-family: "NotoSans-Bold-700";
   color: #282828;
   font-size: 15px;
 }
@@ -248,23 +254,23 @@ body {
   background-color: #1e1e1e;
 }
 .loginotp-h2 {
-  font-size: 28px;
+  font-size: 27px;
   margin-bottom: 20px;
-  font-family: "MinSans-Bold-700";
+  font-family: "NotoSans-Bold-700";
 }
 .loginotp-figure {
   padding: 0 10px;
 }
 .loginotp-figure-i {
-  color: #fae114;
-  font-size: 56px;
+  color: var(--mc);
+  font-size: 55px;
   margin-bottom: 20px;
 }
 .loginotp-figure-p {
-  font-size: 14px;
-  margin-bottom: 14px;
+  font-size: 13px;
+  margin-bottom: 13px;
   color: #ddd;
-  font-family: "MinSans-Regular-400";
+  font-family: "NotoSans-Regular-400";
 }
 .loginotp-container {
   padding: 20px 0;
@@ -285,29 +291,29 @@ body {
 }
 .loginotp-container-codebox-input {
   background-color: #282828 !important;
-  font-size: 12px !important;
+  font-size: 13px !important;
   padding: 0 10px;
   color: #ddd !important;
 }
 .loginotp-container-button {
   padding: 10px 10px;
   font-size: 15px;
-  background-color: #fae114;
+  background-color: var(--mc);
   cursor: pointer;
 }
 .loginotp-container-button-p {
   color: #1e1e1e;
-  font-family: "MinSans-Bold-700";
+  font-family: "NotoSans-Bold-700";
 }
 .loginotp-os {
   cursor: pointer;
   padding-top: 20px;
 }
 .loginotp-os-p {
-  font-size: 12px;
+  font-size: 11px;
   color: #999;
   line-height: 20px;
-  font-family: "MinSans-Regular-400";
+  font-family: "NotoSans-Regular-400";
   text-decoration: underline;
 }
 
@@ -319,7 +325,7 @@ body {
   width: 50px;
   height: 50px;
   border: 7px solid rgba(255, 255, 255, 0.1);
-  border-bottom-color: #fae114;
+  border-bottom-color: var(--mc);
   border-radius: 50%;
   display: inline-block;
   box-sizing: border-box;
@@ -358,11 +364,11 @@ body {
   height: 60px;
 }
 .jg-wrapper-1 .jg-header .jg-top-area .jg-logo .jg-logo-p {
-  font-family: "MinSans-Bold-700";
+  font-family: "MinSans-Black-900";
   padding-left: 2px;
   padding-top: 40px;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 17px;
 }
 .jg-wrapper-1 .jg-header .jg-top-area .jg-top-area-icon {
   padding-top: 35px;
@@ -417,7 +423,7 @@ body {
   content: "";
   height: 60px;
   width: 5px;
-  background-color: #fae114;
+  background-color: var(--mc);
   left: calc(100% - 5px);
   z-index: 999;
 }
@@ -430,7 +436,7 @@ body {
 }
 .jg-wrapper-1 .jg-header .jg-gnb-1 .jg-gnb-container .jg-video i {
   color: #b5b5b5;
-  font-size: 32px;
+  font-size: 31px;
 }
 .jg-wrapper-1 .jg-header .jg-gnb-1 .jg-gnb-container .jg-device-events {
   height: 60px;
@@ -441,7 +447,7 @@ body {
 }
 .jg-wrapper-1 .jg-header .jg-gnb-1 .jg-gnb-container .jg-device-events i {
   color: #b5b5b5;
-  font-size: 32px;
+  font-size: 31px;
 }
 .jg-wrapper-1 .jg-header .jg-gnb-1 .jg-gnb-container .jg-zoom {
   height: 60px;
@@ -553,15 +559,18 @@ body {
   border: 5px solid transparent;
 }
 .jg-main .jg-camera-list .jg-tree-dark-wrapper-2::-webkit-scrollbar-thumb:hover {
-  background: #fae114;
+  background: var(--mc);
   background-clip: padding-box;
   border: 5px solid transparent;
 }
 .jg-main .jg-camera-list .jg-tree-dark-title {
   font-size: 21px;
-  font-family: "MinSans-Bold-700";
+  font-family: "NotoSans-Bold-700";
   display: flex;
   justify-content: space-between;
+}
+.jg-main .jg-camera-list .jg-tree-dark-title-p {
+  font-family: "NotoSans-Bold-700";
 }
 .jg-main .jg-camera-list .jg-tree-dark-title-button {
   display: flex;
@@ -569,13 +578,13 @@ body {
   cursor: pointer;
 }
 .jg-main .jg-camera-list .jg-tree-dark-title-button-revise:hover {
-  color: #fae114;
+  color: var(--mc);
 }
 .jg-main .jg-camera-list .jg-tree-dark-title-button-add:hover {
-  color: #fae114;
+  color: var(--mc);
 }
 .jg-main .jg-camera-list .jg-tree-dark-title-button-delete:hover {
-  color: #fae114;
+  color: var(--mc);
 }
 .jg-main .jg-camera-list .jg-tree-dark-depth-1-wrapper {
   color: #b5b5b5;
@@ -637,7 +646,7 @@ body {
   padding: 10px 10px;
   color: #ddd;
   border-radius: 5px;
-  font-size: 12px;
+  font-size: 11px;
 }
 .jg-main .jg-camera-list .jg-tree-dark-button-more::before {
   content: "";
@@ -742,7 +751,7 @@ body {
   height: 0px;
   border-left: 7.5px solid transparent;
   border-right: 7.5px solid transparent;
-  border-top: 7.5px solid #fae114;
+  border-top: 7.5px solid var(--mc);
 }
 .jg-main .jg-camera-list .jg-tree-dark-button.jg-active-list {
   margin-bottom: 10px;

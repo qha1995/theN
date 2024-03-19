@@ -15,13 +15,16 @@
 	--Jg-ss-split-item-border-type: var(--Jg-ss-split-item-border-width) var(--Jg-ss-split-item-border-style);
 	--Jg-ss-split-item-border: var(--Jg-ss-split-item-border-type) var(--Jg-ss-split-item-border-color);
 
-	--Jg-ss-split-number-font-size: 16px;
+	--Jg-ss-split-number-font-size: 15px;
 	--Jg-ss-split-number-font-color: #ddd;
+
+	/* Project */
+	--mc: #fae114;
 }
 body {
 	background-color: #111;
 	color: #fff;
-	font-family: "MinSans-Bold-700";
+	font-family: "NotoSans-Regular-400";
 }
 $color_1: var(--Jg-ss-split-number-font-color);
 $background-color_1: var(--Jg-ss-split-wrap-bg);
@@ -178,9 +181,10 @@ $background-color_1: var(--Jg-ss-split-wrap-bg);
 					background-color: #282828;
 					margin-bottom: 20px;
 					&-i {
-						transform: translateX(-8px);
+						transform: translate(-8px, 3px);
 						padding-right: 6px;
 						color: #ddd;
+						font-size: 21px;
 					}
 					&-input {
 						color: #ddd !important;
@@ -202,8 +206,10 @@ $background-color_1: var(--Jg-ss-split-wrap-bg);
 
 					&-left {
 						&-i {
+							transform: translate(0px, 2px);
 							padding-right: 6px;
 							color: #ddd;
+							font-size: 20px;
 						}
 						&-input {
 							background-color: #282828 !important;
@@ -217,7 +223,8 @@ $background-color_1: var(--Jg-ss-split-wrap-bg);
 					&-right {
 						cursor: pointer;
 						color: #ddd;
-						padding-top: 3px;
+						padding-top: 1px;
+						font-size: 19px;
 					}
 				}
 			}
@@ -230,20 +237,20 @@ $background-color_1: var(--Jg-ss-split-wrap-bg);
 					&-left {
 						display: flex;
 						&-findid {
-							font-size: 12px;
+							font-size: 13px;
 							margin-right: 10px;
 							color: #b5b5b5;
 							cursor: pointer;
 						}
 						&-findpw {
-							font-size: 12px;
+							font-size: 13px;
 							color: #b5b5b5;
 							cursor: pointer;
 						}
 					}
 					&-right {
 						&-signup {
-							font-size: 12px;
+							font-size: 13px;
 							color: #ddd;
 							cursor: pointer;
 						}
@@ -253,11 +260,11 @@ $background-color_1: var(--Jg-ss-split-wrap-bg);
 		}
 	}
 	&-signin {
-		background-color: #fae114;
+		background-color: var(--mc);
 		cursor: pointer;
 		padding: 5px 5px;
 		border-radius: 5px;
-		font-family: "MinSans-Bold-700";
+		font-family: "NotoSans-Bold-700";
 		color: #282828;
 		font-size: 15px;
 	}
@@ -275,22 +282,22 @@ $background-color_1: var(--Jg-ss-split-wrap-bg);
 		background-color: #1e1e1e;
 	}
 	&-h2 {
-		font-size: 28px;
+		font-size: 27px;
 		margin-bottom: 20px;
-		font-family: "MinSans-Bold-700";
+		font-family: "NotoSans-Bold-700";
 	}
 	&-figure {
 		padding: 0 10px;
 		&-i {
-			color: #fae114;
-			font-size: 56px;
+			color: var(--mc);
+			font-size: 55px;
 			margin-bottom: 20px;
 		}
 		&-p {
-			font-size: 14px;
-			margin-bottom: 14px;
+			font-size: 13px;
+			margin-bottom: 13px;
 			color: #ddd;
-			font-family: "MinSans-Regular-400";
+			font-family: "NotoSans-Regular-400";
 		}
 	}
 	&-container {
@@ -311,7 +318,7 @@ $background-color_1: var(--Jg-ss-split-wrap-bg);
 			}
 			&-input {
 				background-color: #282828 !important;
-				font-size: 12px !important;
+				font-size: 13px !important;
 				padding: 0 10px;
 				color: #ddd !important;
 			}
@@ -319,11 +326,11 @@ $background-color_1: var(--Jg-ss-split-wrap-bg);
 		&-button {
 			padding: 10px 10px;
 			font-size: 15px;
-			background-color: #fae114;
+			background-color: var(--mc);
 			cursor: pointer;
 			&-p {
 				color: #1e1e1e;
-				font-family: "MinSans-Bold-700";
+				font-family: "NotoSans-Bold-700";
 			}
 		}
 	}
@@ -332,10 +339,10 @@ $background-color_1: var(--Jg-ss-split-wrap-bg);
 		cursor: pointer;
 		padding-top: 20px;
 		&-p {
-			font-size: 12px;
+			font-size: 11px;
 			color: #999;
 			line-height: 20px;
-			font-family: "MinSans-Regular-400";
+			font-family: "NotoSans-Regular-400";
 			text-decoration: underline;
 		}
 	}
@@ -349,7 +356,7 @@ $background-color_1: var(--Jg-ss-split-wrap-bg);
 	width: 50px;
 	height: 50px;
 	border: 7px solid rgba(255, 255, 255, 0.1);
-	border-bottom-color: #fae114;
+	border-bottom-color: var(--mc);
 	border-radius: 50%;
 	display: inline-block;
 	box-sizing: border-box;
@@ -387,11 +394,11 @@ $background-color_1: var(--Jg-ss-split-wrap-bg);
 					height: 60px;
 				}
 				.jg-logo-p {
-					font-family: "MinSans-Bold-700";
+					font-family: "MinSans-Black-900";
 					padding-left: 2px;
 					padding-top: 40px;
 					font-weight: 500;
-					font-size: 18px;
+					font-size: 17px;
 				}
 			}
 			.jg-top-area-icon {
@@ -456,7 +463,7 @@ $background-color_1: var(--Jg-ss-split-wrap-bg);
 						content: "";
 						height: 60px;
 						width: 5px;
-						background-color: #fae114;
+						background-color: var(--mc);
 						left: calc(100% - 5px);
 						z-index: 999;
 					}
@@ -471,7 +478,7 @@ $background-color_1: var(--Jg-ss-split-wrap-bg);
 
 					i {
 						color: #b5b5b5;
-						font-size: 32px;
+						font-size: 31px;
 					}
 				}
 				.jg-device-events {
@@ -482,7 +489,7 @@ $background-color_1: var(--Jg-ss-split-wrap-bg);
 					justify-content: center;
 					i {
 						color: #b5b5b5;
-						font-size: 32px;
+						font-size: 31px;
 					}
 				}
 				.jg-zoom {
@@ -603,7 +610,7 @@ $background-color_1: var(--Jg-ss-split-wrap-bg);
 					border: 5px solid transparent;
 				}
 				&::-webkit-scrollbar-thumb:hover {
-					background: #fae114;
+					background: var(--mc);
 					background-clip: padding-box;
 					border: 5px solid transparent;
 				}
@@ -611,9 +618,12 @@ $background-color_1: var(--Jg-ss-split-wrap-bg);
 
 			&-title {
 				font-size: 21px;
-				font-family: "MinSans-Bold-700";
+				font-family: "NotoSans-Bold-700";
 				display: flex;
 				justify-content: space-between;
+				&-p {
+					font-family: "NotoSans-Bold-700";
+				}
 				&-button {
 					display: flex;
 					gap: 10px;
@@ -621,17 +631,17 @@ $background-color_1: var(--Jg-ss-split-wrap-bg);
 
 					&-revise {
 						&:hover {
-							color: #fae114;
+							color: var(--mc);
 						}
 					}
 					&-add {
 						&:hover {
-							color: #fae114;
+							color: var(--mc);
 						}
 					}
 					&-delete {
 						&:hover {
-							color: #fae114;
+							color: var(--mc);
 						}
 					}
 				}
@@ -719,7 +729,7 @@ $background-color_1: var(--Jg-ss-split-wrap-bg);
 					padding: 10px 10px;
 					color: #ddd;
 					border-radius: 5px;
-					font-size: 12px;
+					font-size: 11px;
 
 					&::before {
 						content: "";
@@ -842,7 +852,7 @@ $background-color_1: var(--Jg-ss-split-wrap-bg);
 						height: 0px;
 						border-left: 7.5px solid transparent;
 						border-right: 7.5px solid transparent;
-						border-top: 7.5px solid #fae114;
+						border-top: 7.5px solid var(--mc);
 					}
 				}
 

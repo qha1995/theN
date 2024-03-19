@@ -115,9 +115,7 @@ summary {
 
 /* elements */
 body {
-  font-size: 16px;
-  font-weight: 400;
-  font-family: "Pretendard", sans-serif;
+  font-size: 15px;
   color: var(--black);
   line-height: 1.5;
   -webkit-text-size-adjust: none;
@@ -125,7 +123,7 @@ body {
   width: 100%;
   top: 0;
   left: 0;
-  font-family: "Pretendard", Arial, sans-serif;
+  font-family: "NotoSans-Regular-400";
   margin: 0;
   padding: 0;
 }
@@ -144,7 +142,7 @@ dd,
 input,
 textarea,
 select {
-  font-family: "Pretendard", Arial, sans-serif;
+  font-family: "NotoSans-Regular-400";
   margin: 0;
   padding: 0;
 }
@@ -209,7 +207,7 @@ button {
 }
 
 input[type=text], input[type=password], input[type=reset], input[type=submit], input[type=tel], input[type=number], input[type=email], input[type=date], input[type=datetime-local], input[type=search] {
-  font-size: 16px;
+  font-size: 15px;
   background: var(--gray1);
   border-radius: 8px;
   border: none;
@@ -308,8 +306,8 @@ fieldset {
 }
 
 select {
-  border-radius: 8px;
-  -webkit-border-radius: 8px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
