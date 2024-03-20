@@ -397,7 +397,7 @@ br {
 ::-moz-selection {
 	background: var(--blue);
 	background: rgba(0, 153, 255, 0.35);
-	color: #fff;
+	color: var(--white);
 }
 
 /* scroll style */

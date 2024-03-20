@@ -2,13 +2,14 @@
 :root {
   --white: #ffffff;
   --gray1: #f5f5f5;
-  --gray2: #dbdbdb;
-  --gray3: #cccccc;
+  --gray2: #dddddd;
+  --gray3: #b5b5b5;
   --gray4: #999999;
   --gray5: #555555;
-  --gray6: #2e2e2e;
-  --gray7: #212121;
+  --gray6: #323232;
+  --gray7: #282828;
   --black: #1e1e1e;
+  --bg: #111111;
 }
 
 .jg-none {
