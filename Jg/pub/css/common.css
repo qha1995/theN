@@ -1,14 +1,15 @@
 /* common */
 :root {
   --white: #ffffff;
-  --gray1: #f5f5f5;
+  --gray1: #f3f3f3;
   --gray2: #dddddd;
   --gray3: #b5b5b5;
   --gray4: #999999;
-  --gray5: #555555;
-  --gray6: #323232;
-  --gray7: #282828;
-  --black: #1e1e1e;
+  --gray5: #747474;
+  --gray6: #555555;
+  --gray7: #343638;
+  --gray8: #272829;
+  --black: #1e1e20;
   --bg: #111111;
 }
 

@@ -22,10 +22,10 @@
 
 	--Jg-ss-split-number-font-size: 15px;
 	--Jg-ss-split-number-font-color: var(--gray2);
-
-	$color_1: var(--Jg-ss-split-number-font-color);
-	$background-color_1: var(--Jg-ss-split-wrap-bg);
 }
+
+$color_1: var(--Jg-ss-split-number-font-color);
+$background-color_1: var(--Jg-ss-split-wrap-bg);
 
 /* body */
 body {
@@ -34,6 +34,15 @@ body {
 	font-family: "NotoSans-Regular-400";
 }
 /* lounge common start*/
+
+.jg-treeclose {
+	display: none;
+	// .jg-tree-tab {
+	// 	left: 0
+	// transform: rotate(180deg);
+	// } 가 되게
+}
+
 .jg-wrapper-1 {
 	height: 100vh;
 	position: relative;
@@ -118,7 +127,7 @@ body {
 					i {
 						color: var(--white) !important;
 					}
-					background-color: var(--gray7);
+					background-color: var(--gray8);
 					position: relative;
 					&::after {
 						position: absolute;
@@ -206,6 +215,7 @@ body {
 /* lounge common end*/
 
 /* lounge - camera page start */
+
 .jg-main {
 	box-shadow: 0px 7px 13px rgba(0, 0, 0, 0.6);
 	position: absolute;
@@ -214,209 +224,276 @@ body {
 	width: calc(100% - 60px);
 	background-color: var(--bg);
 	height: calc(100% - 100px);
+
+	.jg-tree-tab {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 315px;
+		font-size: 20px;
+		background-color: var(--gray8);
+		color: var(--mc);
+		z-index: 9999;
+		cursor: pointer;
+	}
 	.jg-camera-list {
 		background-color: var(--black);
 		width: 300px;
 		box-shadow: 0px 7px 13px rgba(0, 0, 0, 0.6);
 
-		.jg-tree-dark {
-			&-wrapper-1 {
-				width: 100%;
-				height: 100%;
-				padding: 15px 15px;
-				position: relative;
-				&-submenu {
-					cursor: pointer;
-					position: absolute;
-					right: -168px;
-					top: 89px;
-					padding: 5px 10px;
-					background-color: var(--gray6);
-					z-index: 9999;
-					&-list {
-						li {
-							font-size: 12px;
-							border-bottom: 1px solid var(--gray5);
-							line-height: 28px;
-							padding: 0 15px;
-							&:first-child {
+		.jg-tree {
+			&-dark {
+				&-wrapper-1 {
+					width: 100%;
+					height: 100%;
+					padding: 15px 15px;
+					position: relative;
+					&-submenu {
+						cursor: pointer;
+						position: absolute;
+						right: -168px;
+						top: 89px;
+						padding: 5px 10px;
+						background-color: var(--gray8);
+						z-index: 9999;
+
+						&-list {
+							li {
+								font-size: 12px;
+								border-bottom: 1px solid var(--gray7);
+								line-height: 28px;
+								padding: 0 15px;
+								&:first-child {
+								}
+								&:last-child {
+									border-bottom: 0px solid var(--gray2);
+								}
 							}
-							&:last-child {
-								border-bottom: 0px solid var(--gray2);
+						}
+						&-close {
+							position: absolute;
+							top: 0;
+							right: 0;
+							padding: 3px 5px;
+							cursor: pointer;
+						}
+					}
+				}
+				&-wrapper-2 {
+					width: 100%;
+					height: 100%;
+					overflow-y: visible;
+					overflow-x: scroll;
+					&::-webkit-scrollbar {
+						height: 15px;
+					}
+					&::-webkit-scrollbar-track {
+						background-color: var(--bg);
+						border-radius: 0px;
+					}
+					&::-webkit-scrollbar-thumb {
+						background: var(--gray7);
+						border-radius: 0px;
+						background-clip: padding-box;
+						border: 5px solid transparent;
+					}
+					&::-webkit-scrollbar-thumb:hover {
+						background: var(--mc);
+						background-clip: padding-box;
+						border: 5px solid transparent;
+					}
+				}
+
+				&-title {
+					font-size: 21px;
+					font-family: "NotoSans-Bold-700";
+					display: flex;
+					justify-content: space-between;
+					&-p {
+						font-family: "NotoSans-Bold-700";
+					}
+					&-button {
+						display: flex;
+						gap: 10px;
+						cursor: pointer;
+						color: var(--gray5);
+
+						&-revise {
+							&:hover {
+								color: var(--mc);
+							}
+						}
+						&-add {
+							&:hover {
+								color: var(--mc);
+							}
+						}
+						&-delete {
+							&:hover {
+								color: var(--mc);
 							}
 						}
 					}
-					&-close {
-						position: absolute;
-						top: 0;
-						right: 0;
-						padding: 3px 5px;
-						cursor: pointer;
+				}
+
+				&-depth {
+					&-wrapper {
+					}
+
+					&-1 {
+						&-wrapper {
+							color: var(--gray2);
+							white-space: normal;
+							width: 100%;
+							box-sizing: content-box;
+						}
+					}
+					&-2 {
+						&-wrapper {
+							width: 100%;
+							box-sizing: content-box;
+							.jg-tree-dark-button-box {
+								padding-left: 20px;
+							}
+						}
+					}
+
+					&-3 {
+						&-wrapper {
+							width: 100%;
+							box-sizing: content-box;
+							.jg-tree-dark-button-box {
+								padding-left: 40px;
+							}
+						}
+					}
+					&-4 {
+						&-wrapper {
+							width: 100%;
+							box-sizing: content-box;
+							.jg-tree-dark-button-box {
+								padding-left: 60px;
+							}
+						}
+					}
+					&-5 {
+						&-wrapper {
+							width: 100%;
+							box-sizing: content-box;
+
+							.jg-tree-dark-button-box {
+								padding-left: 300px;
+							}
+							&-child2 {
+								.jg-tree-dark-button-box {
+									padding-left: 200px;
+								}
+							}
+						}
+					}
+					&-6 {
+						&-wrapper {
+							width: 100%;
+							box-sizing: content-box;
+							.jg-tree-dark-button-box {
+								padding-left: 100px;
+							}
+						}
 					}
 				}
-			}
-			&-wrapper-2 {
-				width: 100%;
-				height: 100%;
-				overflow-y: visible;
-				overflow-x: scroll;
-				&::-webkit-scrollbar {
-					height: 15px;
-				}
-				&::-webkit-scrollbar-track {
-					background-color: var(--bg);
-					border-radius: 0px;
-				}
-				&::-webkit-scrollbar-thumb {
-					background: var(--gray6);
-					border-radius: 0px;
-					background-clip: padding-box;
-					border: 5px solid transparent;
-				}
-				&::-webkit-scrollbar-thumb:hover {
-					background: var(--mc);
-					background-clip: padding-box;
-					border: 5px solid transparent;
-				}
-			}
 
-			&-title {
-				font-size: 21px;
-				font-family: "NotoSans-Bold-700";
-				display: flex;
-				justify-content: space-between;
-				&-p {
-					font-family: "NotoSans-Bold-700";
-				}
 				&-button {
 					display: flex;
-					gap: 10px;
-					cursor: pointer;
+					justify-content: space-between;
+					white-space: nowrap;
+					width: 100%;
+					position: relative;
 
-					&-revise {
-						&:hover {
-							color: var(--mc);
-						}
-					}
-					&-add {
-						&:hover {
-							color: var(--mc);
-						}
-					}
-					&-delete {
-						&:hover {
-							color: var(--mc);
-						}
-					}
-				}
-			}
-
-			&-depth {
-				&-wrapper {
-				}
-
-				&-1 {
-					&-wrapper {
+					&-more {
+						display: none;
+						position: absolute;
+						bottom: -53px;
+						left: 0;
+						background-color: var(--bg);
+						padding: 10px 10px;
 						color: var(--gray2);
-						white-space: normal;
-						width: 100%;
-						box-sizing: content-box;
-					}
-				}
-				&-2 {
-					&-wrapper {
-						width: 100%;
-						box-sizing: content-box;
-						.jg-tree-dark-button-box {
-							padding-left: 20px;
-						}
-					}
-				}
+						border-radius: 5px;
+						font-size: 11px;
 
-				&-3 {
-					&-wrapper {
-						width: 100%;
-						box-sizing: content-box;
-						.jg-tree-dark-button-box {
-							padding-left: 40px;
+						&::before {
+							content: "";
+							position: absolute;
+							top: -7.5px;
+							left: 50%;
+							transform: translateX(-50%);
+							width: 0px;
+							height: 0px;
+							border-left: 7.5px solid transparent;
+							border-right: 7.5px solid transparent;
+							border-bottom: 7.5px solid var(--bg);
 						}
 					}
-				}
-				&-4 {
-					&-wrapper {
-						width: 100%;
-						box-sizing: content-box;
-						.jg-tree-dark-button-box {
-							padding-left: 60px;
-						}
-					}
-				}
-				&-5 {
-					&-wrapper {
-						width: 100%;
-						box-sizing: content-box;
 
-						.jg-tree-dark-button-box {
-							padding-left: 300px;
-						}
-						&-child2 {
-							.jg-tree-dark-button-box {
-								padding-left: 200px;
+					&-wrap {
+						&-longletter {
+							position: relative;
+
+							&:hover {
+								background-color: var(--gray8);
+								color: var(--white);
+								cursor: pointer;
+
+								.jg-tree-dark-button-tab {
+									display: block;
+									// box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+									border-bottom: 1px solid var(--black);
+									z-index: 999;
+								}
+							}
+							&::before {
+								position: absolute;
+								content: "\e949";
+								top: 50%;
+								left: 50%;
+								transform: translate(-50%, -50%);
+								font-size: 17px;
+								font-family: Xeicon;
+								color: var(--gray2);
 							}
 						}
-					}
-				}
-				&-6 {
-					&-wrapper {
-						width: 100%;
-						box-sizing: content-box;
-						.jg-tree-dark-button-box {
-							padding-left: 100px;
+						.jg-active {
+							background-color: var(--gray8);
+							color: var(--white);
+							border-bottom: 1px solid var(--black);
+							.jg-tree-dark-button-box-pwrap {
+								&::before {
+									background-color: var(--gray8);
+								}
+								&::after {
+									background-color: var(--gray8);
+								}
+							}
 						}
-					}
-				}
-			}
-
-			&-button {
-				display: flex;
-				justify-content: space-between;
-				white-space: nowrap;
-				width: 100%;
-				position: relative;
-
-				&-more {
-					display: none;
-					position: absolute;
-					bottom: -57px;
-					left: 0;
-					background-color: var(--bg);
-					padding: 10px 10px;
-					color: var(--gray2);
-					border-radius: 5px;
-					font-size: 11px;
-
-					&::before {
-						content: "";
-						position: absolute;
-						top: -7.5px;
-						left: 50%;
-						transform: translateX(-50%);
-						width: 0px;
-						height: 0px;
-						border-left: 7.5px solid transparent;
-						border-right: 7.5px solid transparent;
-						border-bottom: 7.5px solid var(--bg);
-					}
-				}
-
-				&-wrap {
-					&-longletter {
+						// 리스트 펴고 접기. default는 open, 클릭 시 close로
+						.jg-close {
+							.jg-tree-dark-button-box-arrow-close {
+								display: block;
+							}
+							.jg-tree-dark-button-box-arrow-open {
+								display: none;
+							}
+						}
 						position: relative;
-
+						// 호버했을 때
 						&:hover {
-							background-color: var(--gray7);
+							background-color: var(--gray8);
 							color: var(--white);
 							cursor: pointer;
+
+							.jg-tree-dark-button-more {
+								display: block;
+								z-index: 9999;
+							}
 
 							.jg-tree-dark-button-tab {
 								display: block;
@@ -425,163 +502,113 @@ body {
 								z-index: 999;
 							}
 						}
+					}
+					&-tab {
+						position: absolute;
+						right: 0;
+						top: -30px;
+						padding: 5px 10px 2px 10px;
+						background: var(--gray8);
+						display: none;
+						border-radius: 0px;
+						color: var(--gray3);
+						i {
+							margin-right: 0px;
+							&:last-child {
+								margin-right: 0;
+							}
+						}
+					}
+
+					// 잡았을 떄
+					&.jg-hold {
 						&::before {
 							position: absolute;
-							content: "\e949";
-							top: 50%;
+							content: "";
+							bottom: 0;
+							left: 0;
+							width: 100%;
+							height: 1px;
+							background: var(--gray7);
+						}
+
+						&::after {
+							position: absolute;
+							content: "";
+							bottom: -7.5px;
 							left: 50%;
-							transform: translate(-50%, -50%);
-							font-size: 17px;
-							font-family: Xeicon;
-							color: var(--gray2);
+							transform: translateX(-50%);
+							width: 0px;
+							height: 0px;
+							border-left: 7.5px solid transparent;
+							border-right: 7.5px solid transparent;
+							border-top: 7.5px solid var(--mc);
 						}
 					}
-					.jg-active {
-						background-color: var(--gray7);
-						color: var(--white);
-						border-bottom: 1px solid var(--black);
-						.jg-tree-dark-button-box-pwrap {
-							&::before {
-								background-color: var(--gray7);
-							}
-							&::after {
-								background-color: var(--gray7);
-							}
-						}
-					}
-					// 리스트 펴고 접기. default는 open, 클릭 시 close로
-					.jg-close {
-						.jg-tree-dark-button-box-arrow-close {
-							display: block;
-						}
-						.jg-tree-dark-button-box-arrow-open {
-							display: none;
-						}
-					}
-					position: relative;
-					// 호버했을 때
-					&:hover {
-						background-color: var(--gray7);
-						color: var(--white);
-						cursor: pointer;
 
-						.jg-tree-dark-button-more {
-							display: block;
-							z-index: 9999;
-						}
-
-						.jg-tree-dark-button-tab {
-							display: block;
-							// box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
-							border-bottom: 1px solid var(--black);
-							z-index: 999;
-						}
-					}
-				}
-				&-tab {
-					position: absolute;
-					right: 0;
-					top: -30px;
-					padding: 5px 10px 2px 10px;
-					background: var(--gray7);
-					display: none;
-					border-radius: 0px;
-					i {
-						margin-right: 0px;
-						&:last-child {
-							margin-right: 0;
-						}
-					}
-				}
-
-				// 잡았을 떄
-				&.jg-hold {
-					&::before {
-						position: absolute;
-						content: "";
-						bottom: 0;
-						left: 0;
-						width: 100%;
-						height: 1px;
-						background: var(--gray6);
-					}
-
-					&::after {
-						position: absolute;
-						content: "";
-						bottom: -7.5px;
-						left: 50%;
-						transform: translateX(-50%);
-						width: 0px;
-						height: 0px;
-						border-left: 7.5px solid transparent;
-						border-right: 7.5px solid transparent;
-						border-top: 7.5px solid var(--mc);
-					}
-				}
-
-				// 리스트 펼쳐졌을 때 부모-자식 구분선
-				&.jg-active-list {
-					margin-bottom: 10px;
-					position: relative;
-
-					&::after {
-						position: absolute;
-						bottom: 0;
-						left: 0;
-						width: 100%;
-						background-color: var(--gray6);
-						height: 1px;
-						content: "";
-					}
-				}
-
-				&-box {
-					//클릭해서 리스트 펼쳤을 때
-
-					padding: 10px 10px;
-					display: flex;
-					position: relative;
-
-					&-span {
-						padding-right: 10px;
-						z-index: 2;
-					}
-					&-arrow {
-						&-open {
-							padding-right: 10px;
-							font-size: 20px;
-							z-index: 2;
-							color: var(--white);
-							display: block;
-						}
-						&-close {
-							padding-right: 10px;
-							font-size: 20px;
-							z-index: 2;
-							color: var(--white);
-							display: none;
-						}
-					}
-					&-icon {
-						padding-right: 10px;
-						font-size: 20px;
-						z-index: 2;
-						color: var(--white);
-					}
-
-					&-pwrap {
-						width: 100%;
-						justify-content: space-between;
-						display: flex;
-						white-space: nowrap;
+					// 리스트 펼쳐졌을 때 부모-자식 구분선
+					&.jg-active-list {
+						margin-bottom: 10px;
 						position: relative;
+
+						&::after {
+							position: absolute;
+							bottom: 0;
+							left: 0;
+							width: 100%;
+							background-color: var(--gray7);
+							height: 1px;
+							content: "";
+						}
 					}
-					&-p {
-						word-wrap: break-word;
-						text-overflow: ellipsis;
-						overflow: hidden;
-						width: 170px;
+
+					&-box {
+						//클릭해서 리스트 펼쳤을 때
+
+						padding: 10px 10px;
+						display: flex;
+						position: relative;
+
+						&-span {
+							padding-right: 10px;
+							z-index: 2;
+						}
+						&-arrow {
+							&-open {
+								padding-right: 10px;
+								font-size: 20px;
+								z-index: 2;
+								color: var(--white);
+								display: block;
+							}
+							&-close {
+								padding-right: 10px;
+								font-size: 20px;
+								z-index: 2;
+								color: var(--white);
+								display: none;
+							}
+						}
+						&-icon {
+							padding-right: 10px;
+							font-size: 20px;
+							z-index: 2;
+							color: var(--white);
+						}
+
+						&-pwrap {
+							width: 100%;
+							justify-content: space-between;
+							display: flex;
+							white-space: nowrap;
+							position: relative;
+						}
+						&-p {
+							word-wrap: break-word;
+							text-overflow: ellipsis;
+							overflow: hidden;
+							width: 170px;
+						}
 					}
 				}
 			}
@@ -596,158 +623,158 @@ body {
 	// 	background-color: #222;
 	// 	height: calc(100vh - 130px);
 	// }
-}
-.camera {
-	height: calc(100vh - 115px);
-	font-size: 15px;
-	margin-top: 15px;
-	margin-left: 15px;
-	display: flex;
-	gap: 15px;
-}
-
-.jg-camera-area {
-	/* Screen Split Module Common */
-	/* Vertial */
-	/* Horizontal */
-	/* Equal column 2 split */
-	/* Equal column 3 split */
-	width: 100%;
-
-	.Jg-ss-split-wrap {
+	.camera {
 		height: calc(100vh - 115px);
+		font-size: 15px;
+		margin-top: 15px;
+		margin-left: 15px;
+		display: flex;
+		gap: 15px;
+	}
+
+	.jg-camera-area {
+		/* Screen Split Module Common */
+		/* Vertial */
+		/* Horizontal */
+		/* Equal column 2 split */
+		/* Equal column 3 split */
 		width: 100%;
-		height: 100%;
-		.Jg-ss-split {
+		.Jg-ss-split-wrap {
+			height: calc(100vh - 115px);
 			width: 100%;
 			height: 100%;
-			display: flex;
-			.Jg-ss-split-item {
-				display: flex;
-				position: relative;
+			.Jg-ss-split {
 				width: 100%;
-				justify-content: center;
-				align-items: center;
-				box-sizing: content-box;
-				.Jg-ss-video {
-					display: block;
-					position: absolute;
-					top: 50%;
-					left: 50%;
-					transform: translate(-50%, -50%);
+				height: 100%;
+				display: flex;
+				.Jg-ss-split-item {
+					display: flex;
+					position: relative;
 					width: 100%;
-					height: 100%;
-				}
-				.Jg-ss-split-number {
-					display: block;
-					position: absolute;
-					top: 50%;
-					left: 50%;
-					transform: translate(-50%, -50%);
-					font-size: var(--Jg-ss-split-number-font-size);
-					color: $color_1;
-				}
-			}
-		}
-		.Jg-ss-split.Jg-ss-split-contain {
-			.Jg-ss-split-item {
-				.Jg-ss-video {
-					object-fit: contain;
-				}
-			}
-		}
-		.Jg-ss-split.Jg-ss-split-fit {
-			.Jg-ss-split-item {
-				.Jg-ss-video {
-					object-fit: cover;
+					justify-content: center;
+					align-items: center;
+					box-sizing: content-box;
+					.Jg-ss-video {
+						display: block;
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						transform: translate(-50%, -50%);
+						width: 100%;
+						height: 100%;
+					}
+					.Jg-ss-split-number {
+						display: block;
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						transform: translate(-50%, -50%);
+						font-size: var(--Jg-ss-split-number-font-size);
+						color: $color_1;
+					}
 				}
 			}
-		}
-		.Jg-ss-split.Jg-ss-split-fill {
-			.Jg-ss-split-item {
-				.Jg-ss-video {
-					object-fit: fill;
+			.Jg-ss-split.Jg-ss-split-contain {
+				.Jg-ss-split-item {
+					.Jg-ss-video {
+						object-fit: contain;
+					}
 				}
 			}
-		}
-		.Jg-ss-vert {
-			flex-flow: row wrap;
-			border: var(--Jg-ss-split-wrap-border);
-			background-color: $background-color_1;
-			.Jg-ss-split-item {
-				&:not(:last-child) {
-					border-bottom: var(--Jg-ss-split-item-border);
+			.Jg-ss-split.Jg-ss-split-fit {
+				.Jg-ss-split-item {
+					.Jg-ss-video {
+						object-fit: cover;
+					}
 				}
 			}
-		}
-		.Jg-ss-hori {
-			flex-direction: row;
-			border: var(--Jg-ss-split-wrap-border);
-			background-color: $background-color_1;
-			.Jg-ss-split-item {
-				&:not(:last-child) {
-					border-right: var(--Jg-ss-split-item-border);
+			.Jg-ss-split.Jg-ss-split-fill {
+				.Jg-ss-split-item {
+					.Jg-ss-video {
+						object-fit: fill;
+					}
 				}
 			}
-		}
-		.Jg-ss-equa2 {
-			flex-flow: row wrap;
-			border: var(--Jg-ss-split-wrap-border);
-			background-color: $background-color_1;
-			.Jg-ss-split-item {
-				flex: 1 1 calc((100% - calc(var(--Jg-ss-split-item-border-width) * 1)) / 2);
-				&:not(:nth-child(2n)) {
-					border-right: var(--Jg-ss-split-item-border);
-				}
-				&:not(:nth-last-child(-n + 2)) {
-					border-bottom: var(--Jg-ss-split-item-border);
+			.Jg-ss-vert {
+				flex-flow: row wrap;
+				border: var(--Jg-ss-split-wrap-border);
+				background-color: $background-color_1;
+				.Jg-ss-split-item {
+					&:not(:last-child) {
+						border-bottom: var(--Jg-ss-split-item-border);
+					}
 				}
 			}
-		}
-		.Jg-ss-equa3 {
-			flex-flow: row wrap;
-			border: var(--Jg-ss-split-wrap-border);
-			background-color: $background-color_1;
-			.Jg-ss-split-item {
-				flex: 1 1 calc((100% - calc(var(--Jg-ss-split-item-border-width) * 2)) / 3);
-				&:not(:nth-child(3n)) {
-					border-right: var(--Jg-ss-split-item-border);
-				}
-				&:not(:nth-last-child(-n + 3)) {
-					border-bottom: var(--Jg-ss-split-item-border);
+			.Jg-ss-hori {
+				flex-direction: row;
+				border: var(--Jg-ss-split-wrap-border);
+				background-color: $background-color_1;
+				.Jg-ss-split-item {
+					&:not(:last-child) {
+						border-right: var(--Jg-ss-split-item-border);
+					}
 				}
 			}
-		}
-		.Jg-ss-equa4 {
-			flex-flow: row wrap;
-			border: var(--Jg-ss-split-wrap-border);
-			background-color: $background-color_1;
-			.Jg-ss-split-item {
-				flex: 1 1 calc((100% - calc(var(--Jg-ss-split-item-border-width) * 3)) / 4);
-				&:not(:nth-child(4n)) {
-					border-right: var(--Jg-ss-split-item-border);
-				}
-				&:not(:nth-last-child(-n + 4)) {
-					border-bottom: var(--Jg-ss-split-item-border);
+			.Jg-ss-equa2 {
+				flex-flow: row wrap;
+				border: var(--Jg-ss-split-wrap-border);
+				background-color: $background-color_1;
+				.Jg-ss-split-item {
+					flex: 1 1 calc((100% - calc(var(--Jg-ss-split-item-border-width) * 1)) / 2);
+					&:not(:nth-child(2n)) {
+						border-right: var(--Jg-ss-split-item-border);
+					}
+					&:not(:nth-last-child(-n + 2)) {
+						border-bottom: var(--Jg-ss-split-item-border);
+					}
 				}
 			}
-		}
-		.Jg-ss-equa5 {
-			flex-flow: row wrap;
-			border: var(--Jg-ss-split-wrap-border);
-			background-color: $background-color_1;
-			.Jg-ss-split-item {
-				flex: 1 1 calc((100% - calc(var(--Jg-ss-split-item-border-width) * 4)) / 5);
-				&:not(:nth-child(5n)) {
-					border-right: var(--Jg-ss-split-item-border);
+			.Jg-ss-equa3 {
+				flex-flow: row wrap;
+				border: var(--Jg-ss-split-wrap-border);
+				background-color: $background-color_1;
+				.Jg-ss-split-item {
+					flex: 1 1 calc((100% - calc(var(--Jg-ss-split-item-border-width) * 2)) / 3);
+					&:not(:nth-child(3n)) {
+						border-right: var(--Jg-ss-split-item-border);
+					}
+					&:not(:nth-last-child(-n + 3)) {
+						border-bottom: var(--Jg-ss-split-item-border);
+					}
 				}
-				&:not(:nth-last-child(-n + 5)) {
-					border-bottom: var(--Jg-ss-split-item-border);
+			}
+			.Jg-ss-equa4 {
+				flex-flow: row wrap;
+				border: var(--Jg-ss-split-wrap-border);
+				background-color: $background-color_1;
+				.Jg-ss-split-item {
+					flex: 1 1 calc((100% - calc(var(--Jg-ss-split-item-border-width) * 3)) / 4);
+					&:not(:nth-child(4n)) {
+						border-right: var(--Jg-ss-split-item-border);
+					}
+					&:not(:nth-last-child(-n + 4)) {
+						border-bottom: var(--Jg-ss-split-item-border);
+					}
+				}
+			}
+			.Jg-ss-equa5 {
+				flex-flow: row wrap;
+				border: var(--Jg-ss-split-wrap-border);
+				background-color: $background-color_1;
+				.Jg-ss-split-item {
+					flex: 1 1 calc((100% - calc(var(--Jg-ss-split-item-border-width) * 4)) / 5);
+					&:not(:nth-child(5n)) {
+						border-right: var(--Jg-ss-split-item-border);
+					}
+					&:not(:nth-last-child(-n + 5)) {
+						border-bottom: var(--Jg-ss-split-item-border);
+					}
 				}
 			}
 		}
 	}
 }
+
 /* lounge - camera page end */
 
 /* login page star t*/
@@ -758,7 +785,7 @@ body {
 		left: 50%;
 		transform: translate(-50%, -50%);
 		text-align: center;
-		border: 1px solid var(--gray7);
+		border: 1px solid var(--gray8);
 		padding: 40px 60px;
 		background-color: var(--black);
 	}
@@ -774,9 +801,9 @@ body {
 				width: 270px;
 
 				&-id {
-					border: 1px solid var(--gray5);
+					border: 1px solid var(--gray6);
 					padding: 5px 5px;
-					background-color: var(--gray7);
+					background-color: var(--gray8);
 					margin-bottom: 20px;
 					&-i {
 						transform: translate(-8px, 3px);
@@ -787,7 +814,7 @@ body {
 					&-input {
 						color: var(--gray2) !important;
 						transform: translateX(-8px);
-						background-color: var(--gray7) !important;
+						background-color: var(--gray8) !important;
 						padding: 5px 5px;
 					}
 					&-input::placeholder {
@@ -795,9 +822,9 @@ body {
 					}
 				}
 				&-pw {
-					border: 1px solid var(--gray5);
+					border: 1px solid var(--gray6);
 					padding: 5px 5px;
-					background-color: var(--gray7);
+					background-color: var(--gray8);
 					margin-bottom: 20px;
 					display: flex;
 					justify-content: center;
@@ -810,7 +837,7 @@ body {
 							font-size: 20px;
 						}
 						&-input {
-							background-color: var(--gray7) !important;
+							background-color: var(--gray8) !important;
 							color: var(--gray2) !important;
 							padding: 5px 5px;
 						}
@@ -863,7 +890,7 @@ body {
 		padding: 5px 5px;
 		border-radius: 5px;
 		font-family: "NotoSans-Bold-700";
-		color: var(--gray7);
+		color: var(--gray8);
 		font-size: 15px;
 	}
 }
@@ -877,7 +904,7 @@ body {
 		left: 50%;
 		transform: translate(-50%, -50%);
 		text-align: center;
-		border: 1px solid var(--gray7);
+		border: 1px solid var(--gray8);
 		padding: 20px 20px;
 		background-color: var(--black);
 	}
@@ -902,22 +929,22 @@ body {
 	}
 	&-container {
 		padding: 20px 0;
-		border-top: 1px solid var(--gray5);
-		border-bottom: 1px solid var(--gray5);
+		border-top: 1px solid var(--gray6);
+		border-bottom: 1px solid var(--gray6);
 		&-codebox {
 			display: flex;
-			background-color: var(--gray7);
-			border: 1px solid var(--gray5);
+			background-color: var(--gray8);
+			border: 1px solid var(--gray6);
 			margin-bottom: 10px;
 			align-items: center;
 
 			&-i {
 				color: var(--gray2);
 				padding: 10px 10px;
-				border-right: 1px solid var(--gray5);
+				border-right: 1px solid var(--gray6);
 			}
 			&-input {
-				background-color: var(--gray7) !important;
+				background-color: var(--gray8) !important;
 				font-size: 13px !important;
 				padding: 0 10px;
 				color: var(--gray2) !important;

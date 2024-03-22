@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" href="../Jg/pub/img/favicon.svg" />
 		<title>Lounge</title>
 
 		<!-- CSS -->
@@ -98,19 +99,19 @@
 			<!-- header end -->
 			<!-- main start -->
 			<main id="jg-main" class="jg-main">
-				<div data-tabid="dashboard">dashboard 입니다.</div>
-				<div data-tabid="device">device 입니다.</div>
-				<div data-tabid="zoom">zoom 입니다.</div>
-				<div data-tabid="map">map 입니다.</div>
-				<div data-tabid="setting">setting 입니다.</div>
-				<div data-tabid="user">user 입니다.</div>
+				<div data-tabid="dashboard" class="dashboard">dashboard 입니다.</div>
+				<div data-tabid="device" class="device">device 입니다.</div>
+				<div data-tabid="zoom" class="zoom">zoom 입니다.</div>
+				<div data-tabid="map" class="map">map 입니다.</div>
+				<div data-tabid="setting" class="setting">setting 입니다.</div>
+				<div data-tabid="user" class="user">user 입니다.</div>
 				<div data-tabid="camera" class="camera">
 					<!-- gnb-board start -->
 					<section class="jg-camera-list">
 						<!-- tree module start -->
 						<!-- checkbox, icon default 
                             jg-tree-dark-button-box에 -nocheck, -noicon 클래스명 추가로 삭제 가능 -->
-						<div id="your-project">
+						<div id="your-project ">
 							<!-- jg-tree-dark-wrapper-1 start -->
 							<div class="jg-tree-dark-wrapper-1">
 								<!-- jg-tree-dark-button-submenu start -->
@@ -549,9 +550,13 @@
 								<!-- jg-tree-dark-wrapper-2 end -->
 								<!-- jg-tree-dark-wrapper-1 start -->
 							</div>
+
+							<!-- jg-tree-dark-wrapper-1 end -->
 						</div>
+
 						<!-- tree module end -->
 					</section>
+					<div class="jg-tree-tab"><i class="xi-angle-right-min"></i></div>
 					<!-- gnb-board end -->
 					<!-- videio start -->
 					<section class="jg-camera-area">
@@ -569,6 +574,11 @@
 								3. Jg-ss-split-contain : Pattern1
 								   Jg-ss-split-fit : Pattern2
 								   Jg-ss-split-fill : Pattern3
+
+								   동적 기능이 필요한 부분.
+								   Content 가 없는 경우
+								    아래와 같이 p 태그로 numbering.
+									<p class="Jg-ss-split-number">8</p>
 							 -->
 
 							<div class="Jg-ss-split Jg-ss-equa5 Jg-ss-split-contain">
