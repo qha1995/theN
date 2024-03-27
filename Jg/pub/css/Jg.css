@@ -1281,28 +1281,5 @@ body {
 }
 
 /* loginotp page end */
-/* loading page start*/
-.loading {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 50px;
-  height: 50px;
-  border: 7px solid rgba(255, 255, 255, 0.1);
-  border-bottom-color: var(--mc);
-  border-radius: 50%;
-  display: inline-block;
-  box-sizing: border-box;
-  animation: loadingspin 1.1s linear infinite;
-}
-@keyframes loadingspin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 
-/* loading page end*//*# sourceMappingURL=Jg.css.map */
+/*# sourceMappingURL=Jg.css.map */
