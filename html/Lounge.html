@@ -3,29 +3,29 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="icon" href="../Jg/pub/img/favicon.svg" />
+		<link rel="icon" href="${JG_CONTEXT_PATH}/pub/img/favicon.svg" />
 		<title>라운지</title>
 
 		<!-- CSS -->
 		<!-- css: reset -->
-		<link href="../Jg/pub/css/reset.min.css" rel="stylesheet" type="text/css" />
+		<link href="${JG_CONTEXT_PATH}/pub/css/reset.min.css" rel="stylesheet" type="text/css" />
 		<!-- css: common -->
-		<link href="../Jg/pub/css/common.min.css" rel="stylesheet" type="text/css" />
+		<link href="${JG_CONTEXT_PATH}/pub/css/common.min.css" rel="stylesheet" type="text/css" />
 		<!-- css: lounge -->
-		<link href="../Jg/pub/css/Jg.min.css" rel="stylesheet" type="text/css" />
+		<link href="${JG_CONTEXT_PATH}/pub/css/Jg.min.css" rel="stylesheet" type="text/css" />
 		<!-- css: xeicon -->
-		<link href="../Jg/lib/XEIcon-master/xeicon.min.css" rel="stylesheet" type="text/css" />
+		<link href="${JG_CONTEXT_PATH}/lib/XEIcon-master/xeicon.min.css" rel="stylesheet" type="text/css" />
 
 		<!-- css: loadingBar -->
-		<link href="../Jg/module/LoadingBar/css/LoadingBar_bominchoi_ver1.2.css" rel="stylesheet" type="text/css" />
+		<link href="${JG_CONTEXT_PATH}/module/LoadingBar/css/LoadingBar_bominchoi_ver1.2.css" rel="stylesheet" type="text/css" />
 
 		<!-- JS -->
 
 		<!-- jquery -->
-		<script type="text/javascript" src="../Jg/lib/jquery/jquery/js/jquery-3.7.1.min.js"></script>
+		<script type="text/javascript" src="${JG_CONTEXT_PATH}/lib/jquery/jquery/js/jquery-3.7.1.min.js"></script>
 
 		<!-- js: lounge -->
-		<script type="text/javascript" src="../Jg/js/lounge.js"></script>
+		<script type="text/javascript" src="${JG_CONTEXT_PATH}/js/lounge.js"></script>
 	</head>
 
 	<body>
@@ -38,7 +38,7 @@
 					<div class="jg-top-area">
 						<!-- logo start -->
 						<div class="jg-logo">
-							<img class="jg-logo-img" src="../Jg/pub/img/logo.png" alt="logo" />
+							<img class="jg-logo-img" src="${JG_CONTEXT_PATH}/pub/img/logo.png" alt="logo" />
 							<p class="jg-logo-p">Video Management System</p>
 							<p class="jg-logo-p">-</p>
 							<p class="jg-logo-p">Dev</p>
@@ -72,6 +72,7 @@
 								<li data-tabid="camera" class="jg-video jg-on">
 									<a href="#"><i class="xi-videocam-o"></i></a>
 								</li>
+								<!--
 								<li data-tabid="device" class="jg-device-events">
 									<a href="#"><i class="xi-info-o"></i></a>
 								</li>
@@ -87,6 +88,7 @@
 								<li data-tabid="user" class="jg-user">
 									<a href="#"><i class="xi-user-o"></i></a>
 								</li>
+								-->
 							</ul>
 						</div>
 						<!-- gnb-container end -->
@@ -96,19 +98,26 @@
 				<!-- header end -->
 				<!-- main start -->
 				<main id="jg-main" class="jg-main">
-					<div data-tabid="dashboard" class="dashboard">dashboard 입니다.</div>
+					<!--
 					<div data-tabid="device" class="device">device 입니다.</div>
 					<div data-tabid="zoom" class="zoom">zoom 입니다.</div>
 					<div data-tabid="map" class="map">map 입니다.</div>
 					<div data-tabid="setting" class="setting">setting 입니다.</div>
 					<div data-tabid="user" class="user">user 입니다.</div>
-					<div data-tabid="camera" class="camera">
-						<!-- gnb-board start -->
+					-->
+					<!-- Dashboard -->
+					<!--
+					<section data-tabid="dashboard" class="dashboard">dashboard 입니다.</section>
+					-->
+
+					<!-- Camera -->
+					<section data-tabid="camera" class="camera">
+						<!-- left-board start -->
 						<div class="jg-left-board">
 							<!-- tree module start -->
 							<!-- checkbox, icon default
 								jg-tree-dark-button-box에 -nocheck, -noicon 클래스명 추가로 삭제 가능 -->
-							<div id="your-project ">
+							<div id="your-project">
 								<!-- jg-tree-dark-wrapper-1 start -->
 								<div class="jg-tree-dark-wrapper-1">
 									<!-- jg-tree-dark-button-submenu start -->
@@ -552,15 +561,9 @@
 							</div>
 
 							<!-- tree module end -->
-						</section>
-						<div class="jg-tree-tab"><i class="xi-angle-right-min"></i></div>
-						<!-- gnb-board end -->
 						</div>
-
-
-
-
-
+						<div class="jg-tree-tab"><i class="xi-angle-right-min"></i></div>
+						<!-- left-board end -->
 
 						<!-- videio start -->
 						<div class="jg-camera-area">
@@ -587,86 +590,85 @@
 
 								<div class="Jg-ss-split Jg-ss-equa5 Jg-ss-split-contain">
 									<div class="Jg-ss-split-item">
-										<video class="Jg-ss-video" autoplay src="../Jg/pub/img/sample-5s.mp4"></video>
+										<video class="Jg-ss-video" autoplay src="${JG_CONTEXT_PATH}/pub/img/sample-5s.mp4"></video>
 									</div>
 									<div class="Jg-ss-split-item">
-										<video class="Jg-ss-video" autoplay src="../Jg/pub/img/sample-5s.mp4"></video>
+										<video class="Jg-ss-video" autoplay src="${JG_CONTEXT_PATH}/pub/img/sample-5s.mp4"></video>
 									</div>
 									<div class="Jg-ss-split-item">
-										<video class="Jg-ss-video" autoplay src="../Jg/pub/img/sample-5s.mp4"></video>
+										<video class="Jg-ss-video" autoplay src="${JG_CONTEXT_PATH}/pub/img/sample-5s.mp4"></video>
 									</div>
 									<div class="Jg-ss-split-item">
-										<video class="Jg-ss-video" autoplay src="../Jg/pub/img/sample-5s.mp4"></video>
+										<video class="Jg-ss-video" autoplay src="${JG_CONTEXT_PATH}/pub/img/sample-5s.mp4"></video>
 									</div>
 									<div class="Jg-ss-split-item">
-										<video class="Jg-ss-video" autoplay src="../Jg/pub/img/sample-5s.mp4"></video>
+										<video class="Jg-ss-video" autoplay src="${JG_CONTEXT_PATH}/pub/img/sample-5s.mp4"></video>
 									</div>
 									<div class="Jg-ss-split-item">
-										<video class="Jg-ss-video" autoplay src="../Jg/pub/img/sample-5s.mp4"></video>
+										<video class="Jg-ss-video" autoplay src="${JG_CONTEXT_PATH}/pub/img/sample-5s.mp4"></video>
 									</div>
 									<div class="Jg-ss-split-item">
-										<video class="Jg-ss-video" autoplay src="../Jg/pub/img/sample-5s.mp4"></video>
+										<video class="Jg-ss-video" autoplay src="${JG_CONTEXT_PATH}/pub/img/sample-5s.mp4"></video>
 									</div>
 									<div class="Jg-ss-split-item">
-										<video class="Jg-ss-video" autoplay src="../Jg/pub/img/sample-5s.mp4"></video>
+										<video class="Jg-ss-video" autoplay src="${JG_CONTEXT_PATH}/pub/img/sample-5s.mp4"></video>
 									</div>
 									<div class="Jg-ss-split-item">
-										<video class="Jg-ss-video" autoplay src="../Jg/pub/img/sample-5s.mp4"></video>
+										<video class="Jg-ss-video" autoplay src="${JG_CONTEXT_PATH}/pub/img/sample-5s.mp4"></video>
 									</div>
 									<div class="Jg-ss-split-item">
-										<video class="Jg-ss-video" autoplay src="../Jg/pub/img/sample-5s.mp4"></video>
+										<video class="Jg-ss-video" autoplay src="${JG_CONTEXT_PATH}/pub/img/sample-5s.mp4"></video>
 									</div>
 									<div class="Jg-ss-split-item">
-										<video class="Jg-ss-video" autoplay src="../Jg/pub/img/sample-5s.mp4"></video>
+										<video class="Jg-ss-video" autoplay src="${JG_CONTEXT_PATH}/pub/img/sample-5s.mp4"></video>
 									</div>
 									<div class="Jg-ss-split-item">
-										<video class="Jg-ss-video" autoplay src="../Jg/pub/img/sample-5s.mp4"></video>
+										<video class="Jg-ss-video" autoplay src="${JG_CONTEXT_PATH}/pub/img/sample-5s.mp4"></video>
 									</div>
 									<div class="Jg-ss-split-item">
-										<video class="Jg-ss-video" autoplay src="../Jg/pub/img/sample-5s.mp4"></video>
+										<video class="Jg-ss-video" autoplay src="${JG_CONTEXT_PATH}/pub/img/sample-5s.mp4"></video>
 									</div>
 									<div class="Jg-ss-split-item">
-										<video class="Jg-ss-video" autoplay src="../Jg/pub/img/sample-5s.mp4"></video>
+										<video class="Jg-ss-video" autoplay src="${JG_CONTEXT_PATH}/pub/img/sample-5s.mp4"></video>
 									</div>
 									<div class="Jg-ss-split-item">
-										<video class="Jg-ss-video" autoplay src="../Jg/pub/img/sample-5s.mp4"></video>
+										<video class="Jg-ss-video" autoplay src="${JG_CONTEXT_PATH}/pub/img/sample-5s.mp4"></video>
 									</div>
 									<div class="Jg-ss-split-item">
-										<video class="Jg-ss-video" autoplay src="../Jg/pub/img/sample-5s.mp4"></video>
+										<video class="Jg-ss-video" autoplay src="${JG_CONTEXT_PATH}/pub/img/sample-5s.mp4"></video>
 									</div>
 									<div class="Jg-ss-split-item">
-										<video class="Jg-ss-video" autoplay src="../Jg/pub/img/sample-5s.mp4"></video>
+										<video class="Jg-ss-video" autoplay src="${JG_CONTEXT_PATH}/pub/img/sample-5s.mp4"></video>
 									</div>
 									<div class="Jg-ss-split-item">
-										<video class="Jg-ss-video" autoplay src="../Jg/pub/img/sample-5s.mp4"></video>
+										<video class="Jg-ss-video" autoplay src="${JG_CONTEXT_PATH}/pub/img/sample-5s.mp4"></video>
 									</div>
 									<div class="Jg-ss-split-item">
-										<video class="Jg-ss-video" autoplay src="../Jg/pub/img/sample-5s.mp4"></video>
+										<video class="Jg-ss-video" autoplay src="${JG_CONTEXT_PATH}/pub/img/sample-5s.mp4"></video>
 									</div>
 									<div class="Jg-ss-split-item">
-										<video class="Jg-ss-video" autoplay src="../Jg/pub/img/sample-5s.mp4"></video>
+										<video class="Jg-ss-video" autoplay src="${JG_CONTEXT_PATH}/pub/img/sample-5s.mp4"></video>
 									</div>
 									<div class="Jg-ss-split-item">
-										<video class="Jg-ss-video" autoplay src="../Jg/pub/img/sample-5s.mp4"></video>
+										<video class="Jg-ss-video" autoplay src="${JG_CONTEXT_PATH}/pub/img/sample-5s.mp4"></video>
 									</div>
 									<div class="Jg-ss-split-item">
-										<video class="Jg-ss-video" autoplay src="../Jg/pub/img/sample-5s.mp4"></video>
+										<video class="Jg-ss-video" autoplay src="${JG_CONTEXT_PATH}/pub/img/sample-5s.mp4"></video>
 									</div>
 									<div class="Jg-ss-split-item">
-										<video class="Jg-ss-video" autoplay src="../Jg/pub/img/sample-5s.mp4"></video>
+										<video class="Jg-ss-video" autoplay src="${JG_CONTEXT_PATH}/pub/img/sample-5s.mp4"></video>
 									</div>
 									<div class="Jg-ss-split-item">
-										<video class="Jg-ss-video" autoplay src="../Jg/pub/img/sample-5s.mp4"></video>
+										<video class="Jg-ss-video" autoplay src="${JG_CONTEXT_PATH}/pub/img/sample-5s.mp4"></video>
 									</div>
 									<div class="Jg-ss-split-item">
-										<video class="Jg-ss-video" autoplay src="../Jg/pub/img/sample-5s.mp4"></video>
+										<video class="Jg-ss-video" autoplay src="${JG_CONTEXT_PATH}/pub/img/sample-5s.mp4"></video>
 									</div>
 								</div>
 							</div>
-						</section>
 						<!-- videio end -->
 					</div>
-				</div>
+					</section>
 				</main>
 		
 				<!-- main end -->
