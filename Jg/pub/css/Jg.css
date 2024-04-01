@@ -53,10 +53,9 @@ body {
   display: flex;
 }
 .jg-wrapper-1 .jg-header .jg-top-area .jg-logo .jg-logo-img {
-  width: 40px;
-  height: 40px;
-  transform: translateY(20px);
   margin-right: 8px;
+  width: 60px;
+  height: 60px;
 }
 .jg-wrapper-1 .jg-header .jg-top-area .jg-logo .jg-logo-p {
   font-family: "MinSans-Black-900";
