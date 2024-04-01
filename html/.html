@@ -1,0 +1,95 @@
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="robots" content="noindex, nofollow" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/Jg/css/reset/reset.css" />
+		<link rel="icon" href="/Jg/pub/img/favicon.svg" type="image/x-icon" />
+		<link rel="shortcut icon" href="/Jg/pub/img/favicon.svg" />
+		<title>로그인</title>
+		<!-- CSS -->
+		<!-- css: reset -->
+		<link href="/Jg/pub/css/reset.min.css" rel="stylesheet" type="text/css" />
+		<!-- css: common -->
+		<link href="/Jg/pub/css/common.min.css" rel="stylesheet" type="text/css" />
+		<!-- css: lounge -->
+		<link href="/Jg/pub/css/Jg.min.css" rel="stylesheet" type="text/css" />
+		<!-- css: xeicon -->
+		<link href="/Jg/lib/XEIcon-master/xeicon.min.css" rel="stylesheet" type="text/css" />
+
+		<!-- 시작. 최상단 (순서 변경 금지) -->
+		<script>
+			window.nc3d;
+			window.CONTEXT_PATH = "";
+			window.JG_CONTEXT_PATH = "/Jg";
+			window._r = "backendResult";
+			window.SERVER_SCHEME = "http";
+			window.SERVER_NAME = "localhost";
+			window.SERVER_PORT = "7778";
+			window.IS_LOCAL = "true";
+			window.TERRAIN_URI = "/terrain/";
+			window.OBJECT_URI = "/objects/";
+			window.GEOSERVER_BASEURL = "http://192.168.0.170:33300/geoserver";
+			window.GEOSERVER_WMS_URI = "/wms";
+			window.RASTER_TYPE = "RASTER";
+			window.VECTOR_TYPE = "VECTOR";
+		</script>
+		<!-- 끝. 최상단 (순서 변경 금지) -->
+	</head>
+	<body id="user-dashboard">
+		<svg style="display: none"><filter id="_videostyler_filter_"></filter></svg>
+		<div class="the-n-wrapper">
+			<!-- header start  -->
+			<header class="jg-header">
+				<!-- top-area start -->
+				<div class="jg-top-area">
+					<!-- logo start -->
+					<div class="jg-logo">
+						<img class="jg-logo-img" src="../Jg/pub/img/logo.png" alt="logo" />
+						<p class="jg-logo-p">Video Management System</p>
+						<p class="jg-logo-p">-</p>
+						<p class="jg-logo-p">Dev</p>
+					</div>
+					<!-- logo end -->
+					<!-- top-area-button start-->
+					<div class="jg-top-area-icon">
+						<ul>
+							<li data-id="" class="jg-download">
+								<a href=""><i class="xi-folder-download-o"></i></a>
+							</li>
+							<li data-id="" class="jg-user">
+								<a href=""><i class="xi-profile"></i></a>
+							</li>
+							<li data-id="" class="jg-aside">
+								<a href=""><i class="xi-ellipsis-v"></i></a>
+							</li>
+						</ul>
+					</div>
+					<!-- top-area-button end-->
+				</div>
+				<!-- top-area end -->
+				<!-- gnb start -->
+				<nav class="jg-gnb-1">
+					<!-- gnb-container start -->
+					<div id="jg-gnb-1-tabs" class="jg-gnb-container">
+						<ul>
+							<li data-tabid="dashboard" class="jg-dashboard">
+								<a href="#"><i class="xi-command"></i></a>
+							</li>
+							<li data-tabid="camera" class="jg-video jg-on">
+								<a href="#"><i class="xi-videocam-o"></i></a>
+							</li>
+						</ul>
+					</div>
+					<!-- gnb-container end -->
+				</nav>
+				<!-- gnb end -->
+			</header>
+			<!-- 보민 요청: Main 도 컴포넌트로 빼기 -->
+			<main id="jg-main" class="jg-main">
+				<section data-tabid="dashboard" class="dashboard">dashboard 입니다.</section>
+			</main>
+		</div>
+	</body>
+</html>
